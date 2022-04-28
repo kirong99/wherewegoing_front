@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.contents{
+    width: 1260px;
+    margin: 0 auto;
+}
+.contents h2{
+    font-size: 20px;
+    text-align: center;
+}
+.contents h2 img{
+    height: 18px;
+    margin-right: 5px;
+}
+.contents>p{
+    color: #707070;
+    margin: 20px;
+}
+header{
+    width: 100%;
+    height: 180px;
+    z-index: 10;
+    position: relative;
+}
+header h1{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+header .lo_jo{
+    width: 130px;
+    height: 30px;
+    position: absolute;
+    right: 360px;
+    top: 40px;
+}
+header .lo_jo li{
+    font-size: 16px;
+    float: left;
+    color: #707070;
+    margin-right: 10px;
+}
+header .lo_jo li:nth-child(3){
+    margin-right: 0;
+}
+header .lo_jo li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+header nav{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #B6B6B6;
+    border-top: 1px solid #B6B6B6;
+    background: #fff;
+}
+header nav .gnb{
+    text-align: center;
+    padding-top: 28px;
+    margin-left: 34%;
+}
+header nav .gnb>li{
+    width: 100px;
+    float: left;
+    height: 50px;
+    font-size: 16px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: 30px;
+}
+header nav .gnb>li:hover>a{
+    border-bottom: 4px solid #6167B2;
+}
+header nav .gnb>li>a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.city_select{
+    float: left;
+    margin-left: 425px;
+    height: 45px;
+    margin-top: 21px;
+
+}
+.select-box{
+    position: relative;
+    float: left;
+    width: 130px;
+    height: 40px;
+    border: 2px solid #6167B2;
+    margin-right: 10px;
+}
+.select-box .province-select, .select-box .city-select, .select-box .area-select{
+    width: inherit;
+    height: inherit;
+    background: transparent;
+    border: 0 none;
+    outline: 0 none;
+    padding: 0 5px;
+    position: relative;
+    z-index: 3;
+    font-size: 15px;
+    font-weight: bold;
+    color: #6167B2;
+    text-align: center;
+  }
+  .select-box .province-select option, .select-box .city-select option, .select-box .area-select option{
+    background: #6167B2;
+    color: #fff;
+    padding: 5px 0;
+    font-size: 15px;
+  }
+
+.map{
+    width: 100%;
+    height: 500px;
+    margin-top: 90px;
+}
+.map>div{
+    width: 500px;
+    height: 500px;
+    background: #dcdcdc;
+    border:  1px solid #6167B2;
+    margin: 0 auto;
+}
+.course-select-box{
+    width: 100%;
+    height: 1215px;
+    margin-top: 30px;
+    border: 2px solid #6167B2;
+    position: relative;
+}
+.course-select-box>.line{
+    width:100%;
+    border: 1px solid #6167B2;
+    position: absolute;
+    top: 90px;
+}
+.course-select-box h3:nth-child(2){
+    margin-left: 155px;
+}
+.course-select-box h3{
+    width: 150px;
+    height: 60px;
+    font-size: 20px;
+    float: left;
+    text-align: center;
+    line-height: 60px;
+    margin-top: 15px;
+    border: 1px solid #6167B2;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+.course-select-box h3.on{
+    background: #6167B2;
+    color: #fff;
+}
+.course-select-box .check{
+    position: absolute;
+    top: 120px;
+    width: 305px;
+    height: 50px;
+    right: 30px;
+}
+.course-select-box .check label{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    float: left;
+}
+.course-select-box .check label input{
+    float: left;
+    margin-top: 5px;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+.course-select-box .check label p{
+    color: #6167B2;
+    font-size: 18px;
+    font-weight: bold;
+    float: left;
+}
+.course-select-box .check .choice{
+    width: 130px;
+    height: 50px;
+    margin-left: 26px;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid #6167B2;
+    color: #6167B2;
+    font-weight: bold;
+}
+.course-select-box .check .choice option{
+    background: #6167B2;
+    color: #fff;
+}
+.course-select-box ul.on{
+    display: block;
+}
+.course-select-box ul{
+    position: absolute;
+    top: 215px;
+    left: 130px;
+    display: none;
+}
+.course-select-box ul li{
+    width: 1000px;
+    height: 200px;
+    border: 1px solid #6167B2;
+    margin-bottom: 50px;
+}
+.course-select-box ul li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.course-select-box ul li .all_img{
+    width: 160px;
+    height: 160px;
+    background: #C7C7C7;
+    float: left;
+    margin: 20px 15px 20px 20px;
+}
+.course-select-box ul li .data{
+    height: 160px;
+    top: 20px;
+    position: relative;
+}
+.course-select-box ul li .data h4{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+.course-select-box ul li .data p.state{
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #6167B2;
+}
+.course-select-box ul li .data p.location{
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 0;
+    bottom: 0;
+
+}
+
+.course-select-box ul li .data p{
+    font-size: 15px;
+    color: #707070;
+    margin-bottom: 10px;
+}
+.course-select-box ul li .data p span{
+    font-size: 18px;
+    color: #3E3E3E;
+    margin-right : 10px;
+}
+.course-select-box ul li .data p .notice{
+    font-size: 10px;
+    color: #707070;
+}
+footer{
+    width: 100%;
+    height: 172px;
+    background-color: #C7C7C7;
+    position: relative;
+    margin-top: 130px;
+}
+footer h1{
+    position: absolute;
+    left: 594px;
+    top: 56px;
+}
+footer nav .fo_menu{
+    position: absolute;
+    top: 47px;
+    left: 844px;
+    
+}
+footer nav .fo_menu li{
+    float: left;
+    margin-right: 20px;
+    font-size: 20px;
+    color: #707070;
+}
+footer p{
+    color: #707070;
+    font-size: 16px;
+    position: absolute;
+    left: 844px;
+    bottom: 47px;
+}

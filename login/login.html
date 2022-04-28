@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>어디갈까?</title>
+    <link rel="stylesheet" href="./login.css" type="text/css">
+    <script src="../js/jquery-1.12.3.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href='../main.html'>
+                <img src='../img/logo.png' alt='logo'></img>
+            </a>
+            <ul class='lo_jo'>
+                <li><a href='./login.html'>로그인</a></li>
+                <li>|</li>
+                <li><a href='../join/join.html'>회원가입</a></li>
+            </ul>
+        </h1>
+        <nav>
+            <ul class='gnb'>
+                <li><a href='../main.html'>홈</a></li>
+                <li><a href='../city/city.html'>도시별 장소</a></li>
+                <li><a href='#'>테마별 장소</a></li>
+                <li><a href='#'>캘린더</a></li>
+                <li><a href='../mypage-not_login/MyPage-not_login.html'>마이페이지</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class='Login'>
+        <h2 class='title'>로그인</h2>
+        <form class='main_lo'>
+            <div class='input-container'>
+                <div class='id'>
+                    <label>아이디</label>
+                    <input type="text" name="id" placeholder="아이디"/>
+                </div>
+                
+                <div class='password'>
+                <label>비밀번호</label>
+                <input type="password" name="password" placeholder="비밀번호" />
+                </div>
+            </div>
+            <div class="loginMid">
+                <div class='check'>
+                    <label class="remember_id" htmlFor="remember_id">
+                    
+                    <input type="checkbox" id="remember_id" /> 아이디 저장
+                    </label>
+                    <label class="autoLogin" htmlFor="autoLogin">
+                    
+                    <input type="checkbox" id="autoLogin" /> 로그인 유지
+                    </label>
+                </div>
+                <div class='ji_fi'>
+                    <a href='../join/join.html' class="join">회원가입</a>
+                    <a href='/find' class="find_login">아이디/비밀번호 찾기</a>
+                </div>
+              </div>
+            <div class='button-container'>
+                <button>로그인</button>
+            </div>
+        
+        </form>
+        <form class='otherlogin'>      
+            <div class='line'></div>
+            <h3>소셜 계정으로 간편하게 가입하세요!</h3>
+            <div class='ri'></div>
+            <div class='login'>
+                <button class='kakao'>
+                    <img src='../img/kakao.png' alt='kakao'></img>
+                    카카오로 로그인하기
+                </button>
+                <button class='naver'>
+                    <img src='../img/naver.png' alt='naver'></img>
+                    네이버로 로그인하기
+                </button>
+                <button class='facebook'>
+                    <img src='../img/facebook.png' alt='facebook'></img>
+                    Facebook으로 로그인하기
+                </button>
+            </div>
+         </form>  
+    </div>
+    <footer>
+        <h1>
+            <img src='../img/logo_g.png'></img>
+        </h1>
+        <nav>
+            <ul class='fo_menu'>
+                <li><a href='#'>이용약관</a></li>
+                <li><a href='#'>개인정보처리방침</a></li>
+                <li><a href='#'>마이페이지</a></li>
+                <li><a href='#'>개인정보수정</a></li>
+            </ul>           
+        </nav>
+        <p>ⓒ 어디갈까? ALL RIGHTS RESERVED.</p>
+    </footer>
+ 
+   
+</body>
+</html>

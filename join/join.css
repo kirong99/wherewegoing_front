@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1260px;
+}
+header{
+    width: 100%;
+    height: 180px;
+    z-index: 10;
+    position: relative;
+}
+header h1{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+header .lo_jo{
+    width: 130px;
+    height: 30px;
+    position: absolute;
+    right: 360px;
+    top: 40px;
+}
+header .lo_jo li{
+    font-size: 16px;
+    float: left;
+    color: #707070;
+    margin-right: 10px;
+}
+header .lo_jo li:nth-child(3){
+    margin-right: 0;
+}
+header .lo_jo li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+header nav{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #B6B6B6;
+    border-top: 1px solid #B6B6B6;
+    background: #fff;
+}
+header nav .gnb{
+    text-align: center;
+    padding-top: 28px;
+    margin-left: 34%;
+}
+header nav .gnb>li{
+    width: 100px;
+    float: left;
+    height: 50px;
+    font-size: 16px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: 30px;
+}
+header nav .gnb>li:hover>a{
+    border-bottom: 4px solid #6167B2;
+}
+header nav .gnb>li>a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+.Join{
+    padding-top: 130px;
+    width: 1260px;
+    margin: 0 auto;
+  }
+  .title{
+      text-align: center;
+      font-size: 40px;
+  }
+  .Join_nae{
+      position: relative;
+     top: 90px;
+     left: 255px;
+     width: 750px;
+  }
+  .Join_nae>div{
+      width: 750px;
+      height: 149px;
+      margin-bottom: 30px;
+      position: relative;
+  }
+  .Join_nae>div>label{
+      font-size: 25px;
+  }
+  .Join_nae>div>input{
+      width: 510px;
+      height: 25px;
+      font-size: 18px;
+      border-radius: 28px;
+      padding: 10px 20px;
+      position: absolute;
+      left: 0;
+      top: 52px;
+  }
+  .Join_nae>div>ul{
+      position: absolute;
+      top: 106px;
+      left: 0;
+  }
+  .Join_nae>div>ul>li:nth-child(2){
+      margin-top: 2px;
+  }
+  .Join_nae>div>button{
+      width: 150px;
+      height: 50px;
+      font-size: 20px;
+      border: 1px solid #6167B2;
+      background-color: #fff;
+      color: #6167B2;
+      position: absolute;
+      right: 0;
+      top: 49px;
+      
+  }
+  .Join_nae>div>button:hover{
+      background: #6167B2;
+      color: #fff;
+  }
+  .Join_nae>.id>label p{
+      top: 0;
+      left: 70px;
+      position: absolute;
+  }
+  .Join_nae>.password>label p{
+    top: 0;
+    left: 92px;
+    position: absolute;
+}
+.Join_nae>.password_check>label p{
+    top: 0;
+    left: 144px;
+    position: absolute;
+}
+.Join_nae>.nickname>label p,.Join_nae>.email>label p, .Join_nae>.phone>label p{
+    top: 0;
+    left: 69px;
+    position: absolute;
+}
+.Join_nae>div p{
+      width: 9px;
+      height: 26px;
+      color: #FF0000;
+      font-size: 18px;
+      float: left;
+}
+.recommend {
+      position: relative;
+      width: 960px;
+      margin: 0 auto;
+      height: 468px;
+      margin-top: 150px;
+}
+.re_line{
+      width: 960px;
+      border: 1px solid #6167B2;
+      position: absolute;
+      top: 13px;
+}
+.recommend h3{
+    position: absolute;
+    left: 234px;
+    width: 493px;
+    height: 29px;
+    top: 0;
+    text-align: center;
+    background: #fff;
+}
+.recommend_nae{
+    position: relative;
+    float: left;
+    margin-top: 60px;
+    width: 960px;
+}
+.recommend_nae h4{
+    float: left;
+    font-size: 25px;
+    width: 100%;
+    position: relative;
+}
+.recommend_nae h4 p{
+    font-size: 15px;
+    color: #707070;
+    position: absolute;
+    bottom: 5px;
+    left: 60px;
+}
+.select-box{
+    position: relative;
+  width: 224px;
+  height: 45px;
+  border-radius: 4px;
+  border: 2px solid #6167B2;
+  margin-top: 52px;
+}
+.select-box .mbti-select {
+    width: inherit;
+    height: inherit;
+    background: transparent;
+    border: 0 none;
+    outline: 0 none;
+    padding: 0 5px;
+    position: relative;
+    z-index: 3;
+    font-size: 25px;
+    text-align: center;
+  }
+  .select-box .mbti-select option {
+    background: #6167B2;
+    color: #fff;
+    padding: 3px 0;
+    font-size: 16px;
+  }
+  .date_select{
+      margin-top: 30px;
+  }
+  .recommend_nae h4.date_select>p{
+    left:178px;
+}
+
+.liking{
+    width: 100%;
+    margin-top: 82px;
+}
+
+:root {
+    --transition: .25s;
+    --clr-gray: rgb(126, 126, 126);
+    --clr-purple: #6167B2;
+}
+
+
+
+
+
+.box-group {
+    position: relative;
+    display: inline-block;
+    margin: 20px 15px;
+}
+.box-group input[type="checkbox"] {
+    display: none;
+}
+.box-group label {
+    position: relative;
+    cursor: pointer;
+    font-size: 24px;
+    color: var(--clr-gray);
+}
+
+
+.box-group.solid label {
+    padding: 10px 25px;
+    border-radius: 10px;
+    transition: var(--transition);
+}
+
+.box-group.solid.border-bg label {
+    background: rgba(0, 0, 0, .1);
+}
+.box-group.solid:hover label {
+    background: rgba(0, 0, 0, .05);
+}
+.box-group.solid input[type="checkbox"]:checked + label{
+    color: #ffffff;
+    background: var(--clr-purple);
+    border-color: var(--clr-purple);
+}
+.box-group.solid label::before {
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: 3px;
+    width: 18px;
+    height: 18px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 3px;
+    transform: scale(0) translateX(-20px);
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.box-group.solid input[type="checkbox"]:checked + label::before{
+    opacity: 1;
+    transform: scale(1) translateX(0);
+}
+
+.join_bt{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    background: #6167B2;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    margin: 70px 0 35px 46%;
+}
+
+footer{
+    width: 100%;
+    height: 172px;
+    background-color: #C7C7C7;
+    position: relative;
+    margin-top: 130px;
+}
+footer h1{
+    position: absolute;
+    left: 594px;
+    top: 56px;
+}
+footer nav .fo_menu{
+    position: absolute;
+    top: 47px;
+    left: 844px;
+    
+}
+footer nav .fo_menu li{
+    float: left;
+    margin-right: 20px;
+    font-size: 20px;
+    color: #707070;
+}
+footer p{
+    color: #707070;
+    font-size: 16px;
+    position: absolute;
+    left: 844px;
+    bottom: 47px;
+}
+
+
+
+
+
+
+
+
+

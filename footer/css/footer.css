@@ -1,0 +1,9 @@
+*{margin: 0; padding: 0; list-style: none; box-sizing: border-box;font-family: 'Noto Sans KR', sans-serif;}
+a{text-decoration: none;color:black}
+ul{list-style: none;}
+
+footer{width: 100%;height: 172px;background-color: #C7C7C7;position: relative;margin-top: 130px;}
+footer h1{position: absolute;left: 594px;top: 56px;}
+footer nav .fo_menu{position: absolute;top: 47px;left: 844px}
+footer nav .fo_menu li{float: left;margin-right: 20px;font-size: 20px;color: #707070;}
+footer p{color: #707070;font-size: 16px;position: absolute;left: 844px;bottom: 47px}

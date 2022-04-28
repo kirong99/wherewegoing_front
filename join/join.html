@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>어디갈까?</title>
+    <link rel="stylesheet" href="./join.css" type="text/css">
+    <script src="../js/jquery-1.12.3.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href='../main.html'>
+                <img src='../img/logo.png' alt='logo'></img>
+            </a>
+            <ul class='lo_jo'>
+                <li><a href='../login/login.html'>로그인</a></li>
+                <li>|</li>
+                <li><a href='./join.html'>회원가입</a></li>
+            </ul>
+        </h1>
+        <nav>
+            <ul class='gnb'>
+                <li><a href='../main.html'>홈</a></li>
+                <li><a href='../city/city.html'>도시별 장소</a></li>
+                <li><a href='#'>테마별 장소</a></li>
+                <li><a href='#'>캘린더</a></li>
+                <li><a href='../mypage-not_login/MyPage-not_login.html'>마이페이지</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <form class='Join'>
+        <h2 class='title'>회원가입</h2>
+        <div class='Join_nae'>
+           <div class='id'>
+               <label>아이디<p>*</p></label>
+               <input type="text" name="id" onChange={handleInput} placeholder="영문 또는 영문과 숫자를 조합하여 6~20자를 입력해 주세요."/>
+               <button>중복확인</button>
+               <ul>
+                   <li><p>*</p>한글, 특수문자 사용 불가</li>
+                   <li><p>*</p>영문 대소문자 구분</li>
+               </ul>
+           </div>
+           <div class='password'>
+               <label>비밀번호<p>*</p></label>
+               <input type="password" name="password" onChange={handleInput} placeholder="영문, 숫자, 특수문자 중 2가지 이상을 포함하여 6~20자를 입력해 주세요."/>
+               <ul>         
+                   <li><p>*</p>영문 대소문자 구분</li>
+               </ul> 
+           </div>
+           <div class='password_check'>
+               <label>비밀번호 확인<p>*</p></label>
+               <input type="password" name="password_check" onChange={handleInput} placeholder="비밀번호를 다시 입력해 주세요."/>
+           </div>
+           <div class='nickname'>
+               <label>닉네임<p>*</p></label>
+               <input type="text" name="nickname" onChange={handleInput} placeholder="닉네임을 입력해 주세요."/>
+               <button>중복확인</button>
+           </div>
+           <div class='email'>
+               <label>이메일<p>*</p></label>
+               <input type="text" name="email" onChange={handleInput} placeholder="예 : where@gmail.com"/>
+           </div>
+           <div class='phone'>
+               <label>휴대폰<p>*</p></label>
+               <input type="text" name="phone" onChange={handleInput} placeholder="예 : 01012345678"/>
+               <button>인증번호</button>
+           </div>
+           <div class='phone_check'>
+               <label>인증번호<p>*</p></label>
+               <input type="text" name="phone_check" onChange={handleInput} placeholder="인증번호를 입력해 주세요."/>
+               <button class='check'>확인</button>
+           </div>
+         
+        </div>
+        <div class='recommend'>
+               <div class='re_line'></div>
+               <h3>아래 선택사항들까지 완료하시면 코스 추천에 도움이 됩니다.</h3>
+               <div class="recommend_nae">
+                   <h4>MBTI<p>(선택)</p></h4>
+                   <div class="select-box">
+                        <select name='mbti' class='mbti-select'>
+                            <option disabled selected>MBTI 선택</option>
+                            <option value="ISTJ">ISTJ</option>
+                            <option value="ISFJ">ISFJ</option>
+                            <option value="INFJ">INFJ</option>
+                            <option value="INTJ">INTJ</option>
+                            <option value="ISTP">ISTP</option>
+                            <option value="ISFP">ISFP</option>
+                            <option value="INFP">INFP</option>
+                            <option value="INTP">INTP</option>
+                            <option value="ESTP">ESTP</option>
+                            <option value="ESFP">ESFP</option>
+                            <option value="ENFP">ENFP</option>
+                            <option value="ENTP">ENTP</option>
+                            <option value="ESTJ">ESTJ</option>
+                            <option value="ESFJ">ESFJ</option>
+                            <option value="ENFJ">ENFJ</option>
+                            <option value="ENTJ">ENTJ</option>
+                        </select>
+                    </div>
+                    <h4 class="date_select">데이트 코스 취향<p>(선택)</p></h4>
+               
+                    <div class="liking">
+                        <div class="box-group solid border-bg">
+                            <input type="checkbox" name="checkbox_solid_border_bg" id="checkbox_solid_border_bg_1" />
+                            <label for="checkbox_solid_border_bg_1">활동적</label>
+                        </div>
+                        <div class="box-group solid border-bg">
+                            <input type="checkbox" name="checkbox_solid_border_bg" id="checkbox_solid_border_bg_2" />
+                            <label for="checkbox_solid_border_bg_2">힐링</label>
+                        </div>
+                        <div class="box-group solid border-bg">
+                            <input type="checkbox" name="checkbox_solid_border_bg" id="checkbox_solid_border_bg_3" />
+                            <label for="checkbox_solid_border_bg_3">집콕</label>
+                        </div>
+                        <div class="box-group solid border-bg">
+                            <input type="checkbox" name="checkbox_solid_border_bg" id="checkbox_solid_border_bg_4" />
+                            <label for="checkbox_solid_border_bg_4">스포츠</label>
+                        </div>
+                        <div class="box-group solid border-bg">
+                            <input type="checkbox" name="checkbox_solid_border_bg" id="checkbox_solid_border_bg_5" />
+                            <label for="checkbox_solid_border_bg_5">드라이브</label>
+                        </div>
+                        <div class="box-group solid border-bg">
+                            <input type="checkbox" name="checkbox_solid_border_bg" id="checkbox_solid_border_bg_6" />
+                            <label for="checkbox_solid_border_bg_6">산책</label>
+                        </div>
+                        <div class="box-group solid border-bg">
+                            <input type="checkbox" name="checkbox_solid_border_bg" id="checkbox_solid_border_bg_7" />
+                            <label for="checkbox_solid_border_bg_7">여행</label>
+                        </div>
+                        <div class="box-group solid border-bg">
+                            <input type="checkbox" name="checkbox_solid_border_bg" id="checkbox_solid_border_bg_8" />
+                            <label for="checkbox_solid_border_bg_8">쇼핑</label>
+                        </div>
+                        <div class="box-group solid border-bg">
+                            <input type="checkbox" name="checkbox_solid_border_bg" id="checkbox_solid_border_bg_9" />
+                            <label for="checkbox_solid_border_bg_9">맛집</label>
+                        </div>
+                        <div class="box-group solid border-bg">
+                            <input type="checkbox" name="checkbox_solid_border_bg" id="checkbox_solid_border_bg_10" />
+                            <label for="checkbox_solid_border_bg_10">PC방</label>
+                        </div>
+                        <div class="box-group solid border-bg">
+                            <input type="checkbox" name="checkbox_solid_border_bg" id="checkbox_solid_border_bg_11" />
+                            <label for="checkbox_solid_border_bg_11">영화/연극</label>
+                        </div>
+                        <div class="box-group solid border-bg">
+                            <input type="checkbox" name="checkbox_solid_border_bg" id="checkbox_solid_border_bg_12" />
+                            <label for="checkbox_solid_border_bg_12">카페</label>
+                        </div>
+                        <div class="box-group solid border-bg">
+                            <input type="checkbox" name="checkbox_solid_border_bg" id="checkbox_solid_border_bg_13" />
+                            <label for="checkbox_solid_border_bg_13">맛집투어</label>
+                        </div>
+                        <div class="box-group solid border-bg">
+                            <input type="checkbox" name="checkbox_solid_border_bg" id="checkbox_solid_border_bg_14" />
+                            <label for="checkbox_solid_border_bg_14">공방</label>
+                        </div>
+                        <div class="box-group solid border-bg">
+                            <input type="checkbox" name="checkbox_solid_border_bg" id="checkbox_solid_border_bg_15" />
+                            <label for="checkbox_solid_border_bg_15">전시회</label>
+                        </div>
+                        <div class="box-group solid border-bg">
+                            <input type="checkbox" name="checkbox_solid_border_bg" id="checkbox_solid_border_bg_16" />
+                            <label for="checkbox_solid_border_bg_16">술</label>
+                        </div>
+                        <div class="box-group solid border-bg">
+                            <input type="checkbox" name="checkbox_solid_border_bg" id="checkbox_solid_border_bg_17" />
+                            <label for="checkbox_solid_border_bg_17">노래</label>
+                        </div>
+                        <div class="box-group solid border-bg">
+                            <input type="checkbox" name="checkbox_solid_border_bg" id="checkbox_solid_border_bg_18" />
+                            <label for="checkbox_solid_border_bg_18">동물러버</label>
+                        </div>
+                    </div>
+               
+                </div>
+       </div>
+       <button class="join_bt"><a href="../login/login.html"> 가입하기</a></button>
+   </form>
+
+
+
+    <footer>
+        <h1>
+            <img src='../img/logo_g.png'></img>
+        </h1>
+        <nav>
+            <ul class='fo_menu'>
+                <li><a href='#'>이용약관</a></li>
+                <li><a href='#'>개인정보처리방침</a></li>
+                <li><a href='#'>마이페이지</a></li>
+                <li><a href='#'>개인정보수정</a></li>
+            </ul>           
+        </nav>
+        <p>ⓒ 어디갈까? ALL RIGHTS RESERVED.</p>
+    </footer>
+</body>
+</html>
