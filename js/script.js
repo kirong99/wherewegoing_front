@@ -5,4 +5,4 @@ $(document).ready(function(){
         $(this).next("ul").addClass("on");
     });
 
-})
+});
