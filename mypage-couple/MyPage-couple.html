@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="MyPage-couple.css">
-    <script src="../js/script.js"></script>
-    <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="../js/jquery-1.12.3.js"></script>
+    <script src="../js/script.js"></script>
 </head>
 
 <body>
@@ -61,7 +61,7 @@
                 <a href=""><img class="icon" src="../img/arrow-right-solid.svg" alt=""></a>
             </div>
             <div>
-                <a href="">커플 관리</a>
+                <a href="" class="popup">커플 관리</a>
                 <a href=""><img class="icon" src="../img/arrow-right-solid.svg" alt=""></a>
             </div>
         </div>
@@ -160,6 +160,28 @@
         </nav>
         <p>ⓒ 어디갈까? ALL RIGHTS RESERVED.</p>
     </footer>
+
+    <div class="layer-bg"></div>
+    <div class="layer">
+        <h2>타이틀</h2>
+        <div class="first">
+            <ul>
+                <li><img src="../img/ring.png" alt="ring"></li>
+                <li><p>우리의 시작</p></li>
+                <li><form><input type="date" id="current"></form></li>
+            </ul>
+        </div>
+        <div class="birth">
+            <ul>
+                <li><p>나의 생일</p></li>
+                <li><form><input type="date" id="current"></form></li>
+                <li><img src="../img/birth.png" alt="birth"></li>
+                <li><p>연인의 생일</p></li>
+                <li><form><input type="date" id="current"></form></li>
+            </ul>
+        </div>
+        <a href="#" class="close">닫기</a>
+    </div>>
 </body>
 
 </html>
