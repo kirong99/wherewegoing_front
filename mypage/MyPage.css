@@ -55,7 +55,8 @@ header nav .gnb>li>a{width: 100%;height: 100%;display: block}
 .lastPlace > div{float: left;border: 1px solid #b6b6b6; margin-top: 30px;}
 
 .lastPlace > .left{display: flex;width: 620px;padding: 20px;font-weight: 500;margin-right: 20px;}
-.lastPlace > .left img{width: 20%;}
+.lastPlace > .left a{width: 160px;height: 160px;}
+.lastPlace > .left a img{width: 160px;height: 160px;}
 .lastPlace > .left > div{width: 80%;margin-left: 10px;}
 .lastPlace > .left > div > div{display: flex;}
 .lastPlace > .left > div > div:first-child > p:nth-of-type(1){font-size: 20px;margin-bottom: 3px;font-weight: 700;}
@@ -65,7 +66,8 @@ header nav .gnb>li>a{width: 100%;height: 100%;display: block}
 .lastPlace > .left > div > div > p > span{font-size: 10px;color: red;margin-left: 2px;}
 
 .lastPlace > .right{display: flex;padding: 20px;font-weight: 500;width: 620px;}
-.lastPlace > .right img{width: 20%;}
+.lastPlace > .right a{width: 160px;height: 160px;}
+.lastPlace > .right a img{width: 160px;height: 160px;}
 .lastPlace > .right > div{width: 80%;margin-left: 10px;}
 .lastPlace > .right > div > div{display: flex;}
 .lastPlace > .right > div > div:first-child > p:nth-of-type(1){font-size: 20px;margin-bottom: 3px;font-weight: 700;}
