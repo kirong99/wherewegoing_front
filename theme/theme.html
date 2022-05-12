@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>어디갈까?</title>
+    <link rel="stylesheet" href="./theme.css" type="text/css">
+    <script src="../js/jquery-1.12.3.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href='../main.html'>
+                <img src='../img/logo.png' alt='logo'></img>
+            </a>
+            <ul class='lo_jo'>
+                <li><a href='../login/login.html'>로그인</a></li>
+                <li>|</li>
+                <li><a href='../join/join.html'>회원가입</a></li>
+            </ul>
+        </h1>
+        <nav>
+            <ul class='gnb'>
+                <li><a href='../main.html'>홈</a></li>
+                <li><a href='../city/city.html'>도시별 장소</a></li>
+                <li class="on"><a href='#'>테마별 장소</a></li>
+                <li><a href='../calender/calender.html'>캘린더</a></li>
+                <li><a href='../mypage-not_login/MyPage-not_login.html'>마이페이지</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contents">
+        <p>테마별 장소</p>
+        <h2><img src="../img/maps.png" alt="map-icon">지역 선택(시/도/구)</h2>
+        <div class="city_select">
+            <div class="select-box">
+                <select name='province' class='province-select'>
+                    <option disabled selected>시&#183;도 선택</option>
+                    <option value="gyeonggi">경기도</option>
+                </select>
+            </div>
+            <div class="select-box">
+                <select name='city' class='city-select'>
+                    <option disabled selected>시&#183;군&#183;구 선택</option>
+                    <option value="anyang">안양시</option>
+                </select>
+            </div>
+            <div class="select-box">
+                <select name='area' class='area-select'>
+                    <option disabled selected>구 선택</option>
+                    <option value="manan">만안구</option>
+                    <option value="dongan">동안구</option>
+                </select>
+            </div>
+        </div>
+        <div class="recommend">
+            <h2>비오님을 위한 추천!</h2>
+            <ul>
+                <li class="course3">
+                    <a href="../themepost/themepost.html">
+                        <img src="../img/course3.png" alt="course3">
+                        <div class="background"></div>
+                        <h3>평범하지 않은 활동적인<br>이색 데이트</h3>
+                        <p>#방탈출 #롤러장 #볼링장</p>
+                    </a>
+                </li>
+                <li class="course4">
+                    <a href="#">
+                        <img src="../img/course4.png" alt="course4">
+                        <div class="background"></div>
+                        <h3>날씨 좋은 날에 가기 좋은<br>야외 데이트</h3>
+                        <p>#산책 #자전거 #이쁜추억</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="theme">
+            <h2>테마</h2>
+            <div class="theme_list">
+                <img src="../img/left.png" alt="left-arrow" class="left" />
+                <select name='choice' class='choice'>
+                    <option value="distance">거리순</option>
+                    <option value="popular">인기순</option>
+                    <option value="review">리뷰순</option>
+                </select>
+                <div class="game on">
+                    <div>
+                      <img src="../img/game.png" alt="game">
+                    </div>
+                    <p>오락·게임</p>
+                </div>
+                <ul class="on">
+                    <h3>오락·게임</h3>
+                    <li><a href="../placepost/placepost.html"> 
+                        <div class="all_img"></div>
+                        <div class="data">
+                            <h4><span>고고랜드 롤러스케이트장 안양범계역점</span><span class="kind">롤러스케이트장</span></h4>
+                            <p><span>영업시간</span>평일 11시 ~ 21시 / 토요일 9시 ~ 16시<span class="notice">(일요일 정기휴무)</span></p>
+                            <p><span>전화번호</span>010-2607-1050</p>
+                            <p><span>위치</span>경기 안양시 동안구 시민대로 171 금강벤처텔 1411호</p>
+                            <p class="location">현 위치에서 180m</p>
+                        </div>
+                    </a></li> 
+                    <li><a href="#"> 
+                        <div class="all_img"></div>
+                        <div class="data">
+                            <h4><span>고고랜드 롤러스케이트장 안양범계역점</span><span class="kind">롤러스케이트장</span></h4>
+                            <p class="reservation">예약제</p>
+                            <p><span>전화번호</span>010-8748-7936</p>
+                            <p><span>위치</span>경기 안양시 동안구 동안로 102 204동 1505호</p>
+                            <p class="location">현 위치에서 184m</p>
+                        </div>
+                    </a></li> 
+                    <li><a href="#"> 
+                        <div class="all_img"></div>
+                        <div class="data">
+                            <h4><span>고고랜드 롤러스케이트장 안양범계역점</span><span class="kind">롤러스케이트장</span></h4>
+                            <p class="reservation">예약제</p>
+                            <p><span>전화번호</span>010-4724-5006</p>
+                            <p><span>위치</span>경기 안양시 동안구 평촌대로 217</p>
+                            <p class="location">현 위치에서 415m</p>
+                        </div>
+                    </a></li> 
+                </ul>
+                <div class="book">
+                    <div>
+                        <img src="../img/book.png" alt="book">
+                    </div>
+                    <p>도서·만화</p>
+                </div>
+                <ul>
+                    <h3>도서·만화</h3>
+                    <li><a href="#"> 
+                        <div class="all_img"></div>
+                        <div class="data">
+                            <h4><span>벌툰 범계역점</span><span class="kind">만화방</span></h4>
+                            <p><span>영업시간</span>평일 11시 ~ 21시 / 토요일 9시 ~ 16시<span class="notice">(일요일 정기휴무)</span></p>
+                            <p><span>전화번호</span>010-2607-1050</p>
+                            <p><span>위치</span>경기 안양시 동안구 시민대로 171 금강벤처텔 1411호</p>
+                            <p class="location">현 위치에서 180m</p>
+                        </div>
+                    </a></li> 
+                    <li><a href="#"> 
+                        <div class="all_img"></div>
+                        <div class="data">
+                            <h4><span>벌툰 범계역점</span><span class="kind">만화방</span></h4>
+                            <p class="reservation">예약제</p>
+                            <p><span>전화번호</span>010-8748-7936</p>
+                            <p><span>위치</span>경기 안양시 동안구 동안로 102 204동 1505호</p>
+                            <p class="location">현 위치에서 184m</p>
+                        </div>
+                    </a></li> 
+                    <li><a href="#"> 
+                        <div class="all_img"></div>
+                        <div class="data">
+                            <h4><span>벌툰 범계역점</span><span class="kind">만화방</span></h4>
+                            <p class="reservation">예약제</p>
+                            <p><span>전화번호</span>010-4724-5006</p>
+                            <p><span>위치</span>경기 안양시 동안구 평촌대로 217</p>
+                            <p class="location">현 위치에서 415m</p>
+                        </div>
+                    </a></li> 
+                </ul>
+                <div class="drive">
+                    <div>
+                      <img src="../img/car.png" alt="drive">
+                    </div>
+                    <p>드라이브</p>
+                </div>
+                <ul>
+                    <h3>드라이브</h3>
+                    <li><a href="#"> 
+                        <div class="all_img"></div>
+                        <div class="data">
+                            <h4><span>Lueur Candle</span><span class="kind">캔들</span></h4>
+                            <p><span>영업시간</span>평일 11시 ~ 21시 / 토요일 9시 ~ 16시<span class="notice">(일요일 정기휴무)</span></p>
+                            <p><span>전화번호</span>010-2607-1050</p>
+                            <p><span>위치</span>경기 안양시 동안구 시민대로 171 금강벤처텔 1411호</p>
+                            <p class="location">현 위치에서 180m</p>
+                        </div>
+                    </a></li> 
+                    <li><a href="#"> 
+                        <div class="all_img"></div>
+                        <div class="data">
+                            <h4><span>Lueur Candle</span><span class="kind">캔들</span></h4>
+                            <p class="reservation">예약제</p>
+                            <p><span>전화번호</span>010-8748-7936</p>
+                            <p><span>위치</span>경기 안양시 동안구 동안로 102 204동 1505호</p>
+                            <p class="location">현 위치에서 184m</p>
+                        </div>
+                    </a></li> 
+                    <li><a href="#"> 
+                        <div class="all_img"></div>
+                        <div class="data">
+                            <h4><span>Lueur Candle</span><span class="kind">캔들</span></h4>
+                            <p class="reservation">예약제</p>
+                            <p><span>전화번호</span>010-4724-5006</p>
+                            <p><span>위치</span>경기 안양시 동안구 평촌대로 217</p>
+                            <p class="location">현 위치에서 415m</p>
+                        </div>
+                    </a></li> 
+                </ul>
+                <div class="food">
+                    <div>
+                      <img src="../img/food.png" alt="food">
+                    </div>
+                    <p>맛집 탐방</p>
+                </div>
+                <ul>
+                    <h3>맛집 탐방</h3>
+                    <li><a href="#"> 
+                        <div class="all_img"></div>
+                        <div class="data">
+                            <h4><span>마초쉐프 범계점</span><span class="kind">이탈리아 음식</span></h4>
+                            <p><span>영업시간</span>평일 11시 ~ 21시 / 토요일 9시 ~ 16시<span class="notice">(일요일 정기휴무)</span></p>
+                            <p><span>전화번호</span>010-2607-1050</p>
+                            <p><span>위치</span>경기 안양시 동안구 시민대로 171 금강벤처텔 1411호</p>
+                            <p class="location">현 위치에서 180m</p>
+                        </div>
+                    </a></li> 
+                    <li><a href="#"> 
+                        <div class="all_img"></div>
+                        <div class="data">
+                            <h4><span>마초쉐프 범계점</span><span class="kind">이탈리아 음식</span></h4>
+                            <p class="reservation">예약제</p>
+                            <p><span>전화번호</span>010-8748-7936</p>
+                            <p><span>위치</span>경기 안양시 동안구 동안로 102 204동 1505호</p>
+                            <p class="location">현 위치에서 184m</p>
+                        </div>
+                    </a></li> 
+                    <li><a href="#"> 
+                        <div class="all_img"></div>
+                        <div class="data">
+                            <h4><span>마초쉐프 범계점</span><span class="kind">이탈리아 음식</span></h4>
+                            <p class="reservation">예약제</p>
+                            <p><span>전화번호</span>010-4724-5006</p>
+                            <p><span>위치</span>경기 안양시 동안구 평촌대로 217</p>
+                            <p class="location">현 위치에서 415m</p>
+                        </div>
+                    </a></li> 
+                </ul>
+                <div class="cafe">
+                    <div>
+                        <img src="../img/cafe.png" alt="cafe">
+                    </div>
+                    <p>카페</p>
+                </div>
+                <ul>
+                    <h3>카페</h3>
+                    <li><a href="#"> 
+                        <div class="all_img"></div>
+                        <div class="data">
+                            <h4><span>사이숲</span><span class="kind">카페</span></h4>
+                            <p><span>영업시간</span>매일 10시~21시<span class="notice">(브런치식사오픈:11시)</span></p>
+                            <p><span>전화번호</span>070-7779-4242</p>
+                            <p><span>위치</span>경기 안양시 만안구 예술공원로131번길 31</p>
+                            <p class="location">현 위치에서 40m</p>
+                        </div>
+                    </a></li> 
+                    <li><a href="#"> 
+                        <div class="all_img"></div>
+                        <div class="data">
+                            <h4><span>사이숲</span><span class="kind">카페</span></h4>
+                            <p><span>영업시간</span>매일 10시~21시<span class="notice">(브런치식사오픈:11시)</span></p>
+                            <p><span>전화번호</span>070-7779-4242</p>
+                            <p><span>위치</span>경기 안양시 만안구 예술공원로131번길 31</p>
+                            <p class="location">현 위치에서 40m</p>
+                        </div>
+                    </a></li> 
+                    <li><a href="#"> 
+                        <div class="all_img"></div>
+                        <div class="data">
+                            <h4><span>사이숲</span><span class="kind">카페</span></h4>
+                            <p><span>영업시간</span>매일 10시~21시<span class="notice">(브런치식사오픈:11시)</span></p>
+                            <p><span>전화번호</span>070-7779-4242</p>
+                            <p><span>위치</span>경기 안양시 만안구 예술공원로131번길 31</p>
+                            <p class="location">현 위치에서 40m</p>
+                        </div>
+                    </a></li> 
+                </ul>
+                <div class="oneday">
+                    <div>
+                      <img src="../img/oneday.png" alt="oneday">
+                    </div>
+                    <p>원데이클래스</p>
+                </div>
+                <ul>
+                    <h3>원데이클래스</h3>
+                    <li><a href="#"> 
+                        <div class="all_img"></div>
+                        <div class="data">
+                            <h4><span>해피본아트</span><span class="kind">미술</span></h4>
+                            <p><span>영업시간</span>평일 11시 ~ 21시 / 토요일 9시 ~ 16시<span class="notice">(일요일 정기휴무)</span></p>
+                            <p><span>전화번호</span>010-2607-1050</p>
+                            <p><span>위치</span>경기 안양시 동안구 시민대로 171 금강벤처텔 1411호</p>
+                            <p class="location">현 위치에서 180m</p>
+                        </div>
+                    </a></li> 
+                    <li><a href="#"> 
+                        <div class="all_img"></div>
+                        <div class="data">
+                            <h4><span>일상향기</span><span class="kind">향수, 캔들, 비누, 화장품</span></h4>
+                            <p class="reservation">예약제</p>
+                            <p><span>전화번호</span>010-8748-7936</p>
+                            <p><span>위치</span>경기 안양시 동안구 동안로 102 204동 1505호</p>
+                            <p class="location">현 위치에서 184m</p>
+                        </div>
+                    </a></li> 
+                    <li><a href="#"> 
+                        <div class="all_img"></div>
+                        <div class="data">
+                            <h4><span>Lueur Candle</span><span class="kind">캔들</span></h4>
+                            <p class="reservation">예약제</p>
+                            <p><span>전화번호</span>010-4724-5006</p>
+                            <p><span>위치</span>경기 안양시 동안구 평촌대로 217</p>
+                            <p class="location">현 위치에서 415m</p>
+                        </div>
+                    </a></li> 
+                </ul>
+                <div class="drink">
+                    <div>
+                      <img src="../img/cheers.png" alt="drink">
+                    </div>
+                    <p>술집</p>
+                </div>
+                <ul>
+                    <h3>술집</h3>
+                    <li><a href="#"> 
+                        <div class="all_img"></div>
+                        <div class="data">
+                            <h4>해피본아트</h4>
+                            <p class="kind">미술</p>
+                            <p><span>영업시간</span>평일 11시 ~ 21시 / 토요일 9시 ~ 16시<span class="notice">(일요일 정기휴무)</span></p>
+                            <p><span>전화번호</span>010-2607-1050</p>
+                            <p><span>위치</span>경기 안양시 동안구 시민대로 171 금강벤처텔 1411호</p>
+                            <p class="location">현 위치에서 180m</p>
+                        </div>
+                    </a></li> 
+                    <li><a href="#"> 
+                        <div class="all_img"></div>
+                        <div class="data">
+                            <h4>일상향기</h4>
+                            <p class="kind">향수, 캔들, 비누, 화장품</p>
+                            <p class="reservation">예약제</p>
+                            <p><span>전화번호</span>010-8748-7936</p>
+                            <p><span>위치</span>경기 안양시 동안구 동안로 102 204동 1505호</p>
+                            <p class="location">현 위치에서 184m</p>
+                        </div>
+                    </a></li> 
+                    <li><a href="#"> 
+                        <div class="all_img"></div>
+                        <div class="data">
+                            <h4>Lueur Candle</h4>
+                            <p class="kind">캔들</p>
+                            <p class="reservation">예약제</p>
+                            <p><span>전화번호</span>010-4724-5006</p>
+                            <p><span>위치</span>경기 안양시 동안구 평촌대로 217</p>
+                            <p class="location">현 위치에서 415m</p>
+                        </div>
+                    </a></li> 
+                </ul>
+            <img src="../img/right.png" alt="right-arrow" class="right" />
+            <div class="line"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h1>
+            <img src='../img/logo_g.png'></img>
+        </h1>
+        <nav>
+            <ul class='fo_menu'>
+                <li><a href='#'>이용약관</a></li>
+                <li><a href='#'>개인정보처리방침</a></li>
+                <li><a href='#'>마이페이지</a></li>
+                <li><a href='#'>개인정보수정</a></li>
+            </ul>           
+        </nav>
+        <p>ⓒ 어디갈까? ALL RIGHTS RESERVED.</p>
+    </footer>
+</body>
+</html>
