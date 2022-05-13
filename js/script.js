@@ -17,6 +17,9 @@ document.addEventListener('DOMContentLoaded', function () {
         eventRemove: function (obj) {
             console.log(obj);
         },
+    })
+    const calData = {
+        calendar,
         events: [
             {
                 title: 'event1',
@@ -32,13 +35,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 start: '2022-05-23'
             }
         ]
+    }
+    calData.calendar.render();
+    calData.events.forEach(function(Element){
+        console.log(Element)
     })
-    calendar.render();
 });
 
-calendar.forEach(function(element){
-    console.log(element);
-});
+
 
 $(document).ready(function(){
 
