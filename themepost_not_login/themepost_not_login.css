@@ -26,6 +26,10 @@ body{
     font-size: 25px;
     margin-bottom: 57px;
 }
+.alert{width: 1260px;height: 138px;margin: 0 auto;text-align: center;position: relative;top: 52px;}
+.alert h3{font-size: 23px;font-weight: 700;}
+.alert span a{width: 150px;height: 40px;background: #6167b2;font-size: 15px;font-weight: 500;color: #ffffff;position: relative;left: 50px;padding: 10px 25px;}
+.contents .blur{width: 1260px;height: 100%;margin: 0 auto;opacity: .05;}
 .box{
     width: 900px;
     height: 1285px;

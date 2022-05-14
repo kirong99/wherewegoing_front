@@ -2,28 +2,6 @@
 a{text-decoration: none;color:black}
 ul{list-style: none;}
 
-/* header */
-header{width: 100%;height: 180px;position: relative}
-header h1{width: 100%;height: 100px;text-align: center}
-header .lo_jo{width: 250px;height: 30px;position: absolute;right: 360px;top: 40px;}
-header .lo_jo li{font-size: 16px;float: left;color: #707070;margin-right: 10px}
-header .lo_jo li:nth-child(3){margin-right: 0}
-header .lo_jo .hello{font-size: 20px;}
-header .lo_jo .hello span{color: black;}
-header .lo_jo .logout{width:50px;height:20px;font-size: 10px;color: #707070;margin-top: 9px;background-color: #fff;border: 1px solid #707070;}
-
-/* header .lo_jo{width: 130px;height: 30px;position: absolute;right: 360px;top: 40px;}
-header .lo_jo li{font-size: 16px;float: left;color: #707070;margin-right: 10px;}
-header .lo_jo li:nth-child(3){margin-right: 0;}
-header .lo_jo li a{width: 100%;height: 100%;display: block} */
-
-
-header nav{width: 100%;height: 80px;border-bottom: 1px solid #B6B6B6;border-top: 1px solid #B6B6B6;background: #fff;}
-header nav .gnb{text-align: center;padding-top: 28px;margin-left: 34%}
-header nav .gnb>li{width: 100px;float: left;height: 50px;font-size: 16px;box-sizing: border-box;text-align: center;margin-right: 30px;}
-header nav .gnb>li:hover>a{border-bottom: 4px solid #6167B2}
-header nav .gnb>li>a{width: 100%;height: 100%;display: block}
-
 /* 부제목 */
 .title{width: 1220px;height: 20px;display: flex;justify-content: space-between;margin: 0 auto; margin-top: 20px;color: #cccccc;font-size: 15px;font-weight: 500;color: #707070;}
 
@@ -34,6 +12,7 @@ header nav .gnb>li>a{width: 100%;height: 100%;display: block}
 .couple > div:nth-of-type(2) > p:nth-of-type(2){color: #ff4b4b;}
 .couple > div:nth-of-type(3){display: flex;width: 778px;justify-content: space-between;margin: 0 auto;margin-top: 40px;font-weight: 400;}
 .couple > div:nth-of-type(3) button{width: 150px; height: 40px; border: 1px solid #b6b6b6; border-radius: 33px;background: white;font-size: 15px;}
+.couple > div:nth-of-type(3) button:hover{background-color: #6167b2;color: #fff;border: 1px solid #6167b2;}
 
 
 /* 메뉴 */
