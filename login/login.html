@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./login.css" type="text/css">
     <link rel="stylesheet" href="../header/header.css">
     <script src="../js/jquery-1.12.3.js"></script>
-    <script src="../js/script.js"></script>
 </head>
 <body>
     <header>
@@ -38,12 +37,12 @@
             <div class='input-container'>
                 <div class='id'>
                     <label>아이디</label>
-                    <input type="text" name="id" placeholder="아이디"/>
+                    <input type="text" name="id" id="id" placeholder="아이디"/>
                 </div>
                 
                 <div class='password'>
                 <label>비밀번호</label>
-                <input type="password" name="password" placeholder="비밀번호" />
+                <input type="password" name="password" id="password" placeholder="비밀번호" />
                 </div>
             </div>
             <div class="loginMid">
@@ -63,7 +62,7 @@
                 </div>
               </div>
             <div class='button-container'>
-                <button>로그인</button>
+                <button id="login">로그인</button>
             </div>
         
         </form>
@@ -101,7 +100,22 @@
         </nav>
         <p>ⓒ 어디갈까? ALL RIGHTS RESERVED.</p>
     </footer>
- 
-   
+    <script src="login.js"></script>
 </body>
+
+<!-- <script>
+    function loginCheck() {
+    let loginForm = document.loginForm;
+    let id =document.getElementById('mb_id').value;
+    let pwd = document.getElementById('mb_pwd').value;
+
+    if(id==""){
+        alert("아이디를 입력해주세요.");
+    }else if(pwd==""){
+        alert("비밀번호를 입력해주세요.");
+    }else{
+        loginForm.submit();
+    }
+}
+</script> -->
 </html>
