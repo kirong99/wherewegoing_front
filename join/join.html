@@ -39,8 +39,8 @@
         <div class='Join_nae'>
            <div class='id'>
                <label>아이디<p>*</p></label>
-               <input type="text" name="id" onChange={handleInput} placeholder="영문 또는 영문과 숫자를 조합하여 6~20자를 입력해 주세요."/>
-               <button>중복확인</button>
+               <input type="text" name="id" id="id" onChange={handleInput} placeholder="영문 또는 영문과 숫자를 조합하여 6~20자를 입력해 주세요."/>
+               <button id="check_id">중복확인</button>
                <ul>
                    <li><p>*</p>한글, 특수문자 사용 불가</li>
                    <li><p>*</p>영문 대소문자 구분</li>
@@ -59,8 +59,8 @@
            </div>
            <div class='nickname'>
                <label>닉네임<p>*</p></label>
-               <input type="text" name="nickname" onChange={handleInput} placeholder="닉네임을 입력해 주세요."/>
-               <button>중복확인</button>
+               <input type="text" name="nickname" id="nick" onChange={handleInput} placeholder="닉네임을 입력해 주세요."/>
+               <button id="check_nick">중복확인</button>
            </div>
            <div class='email'>
                <label>이메일<p>*</p></label>
@@ -202,5 +202,6 @@
         </nav>
         <p>ⓒ 어디갈까? ALL RIGHTS RESERVED.</p>
     </footer>
+    <script src="join.js"></script>
 </body>
 </html>
