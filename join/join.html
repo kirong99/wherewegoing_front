@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./join.css" type="text/css">
     <link rel="stylesheet" href="../header/header.css">
     <script src="../js/jquery-1.12.3.js"></script>
-    <script src="../js/script.js"></script>
+    <!-- <script src="../js/script.js"></script> -->
 </head>
 <body>
     <header>
@@ -40,7 +40,7 @@
            <div class='id'>
                <label>아이디<p>*</p></label>
                <input type="text" name="id" id="id" onChange={handleInput} placeholder="영문 또는 영문과 숫자를 조합하여 6~20자를 입력해 주세요."/>
-               <button id="check_id">중복확인</button>
+               <button id="check_id" type="button">중복확인</button>
                <ul>
                    <li><p>*</p>한글, 특수문자 사용 불가</li>
                    <li><p>*</p>영문 대소문자 구분</li>
@@ -48,32 +48,32 @@
            </div>
            <div class='password'>
                <label>비밀번호<p>*</p></label>
-               <input type="password" name="password" onChange={handleInput} placeholder="영문, 숫자, 특수문자 중 2가지 이상을 포함하여 6~20자를 입력해 주세요."/>
+               <input type="password" name="password" id="password" onChange={handleInput} placeholder="영문, 숫자, 특수문자 중 2가지 이상을 포함하여 6~20자를 입력해 주세요."/>
                <ul>         
                    <li><p>*</p>영문 대소문자 구분</li>
                </ul> 
            </div>
            <div class='password_check'>
                <label>비밀번호 확인<p>*</p></label>
-               <input type="password" name="password_check" onChange={handleInput} placeholder="비밀번호를 다시 입력해 주세요."/>
+               <input type="password" name="password_check" id="password_check" onChange={handleInput} placeholder="비밀번호를 다시 입력해 주세요."/>
            </div>
            <div class='nickname'>
                <label>닉네임<p>*</p></label>
-               <input type="text" name="nickname" id="nick" onChange={handleInput} placeholder="닉네임을 입력해 주세요."/>
-               <button id="check_nick">중복확인</button>
+               <input type="text" name="nickname" id="nickname" onChange={handleInput} placeholder="닉네임을 입력해 주세요."/>
+               <button id="check_nick" type="button">중복확인</button>
            </div>
            <div class='email'>
                <label>이메일<p>*</p></label>
-               <input type="text" name="email" onChange={handleInput} placeholder="예 : where@gmail.com"/>
+               <input type="text" name="email" id="email" onChange={handleInput} placeholder="예 : where@gmail.com"/>
            </div>
            <div class='phone'>
                <label>휴대폰<p>*</p></label>
-               <input type="text" name="phone" onChange={handleInput} placeholder="예 : 01012345678"/>
+               <input type="text" name="phone" id="phone" onChange={handleInput} placeholder="예 : 01012345678"/>
                <button>인증번호</button>
            </div>
            <div class='phone_check'>
                <label>인증번호<p>*</p></label>
-               <input type="text" name="phone_check" onChange={handleInput} placeholder="인증번호를 입력해 주세요."/>
+               <input type="text" name="phone_check" id="phone_check" onChange={handleInput} placeholder="인증번호를 입력해 주세요."/>
                <button class='check'>확인</button>
            </div>
          
@@ -183,7 +183,7 @@
                
                 </div>
        </div>
-       <button class="join_bt"><a href="../login/login.html"> 가입하기</a></button>
+       <button class="join_bt" type="button" onclick="join_check()"><a href="../login/login.html"> 가입하기</a></button>
    </form>
 
 
