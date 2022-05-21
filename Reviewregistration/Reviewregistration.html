@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>어디갈까?</title>
+    <link rel="stylesheet" href="./Reviewregistration.css" type="text/css">
+    <script src="../js/jquery-1.12.3.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="../main.html">
+                <img src="../img/logo.png" alt="어디갈까_logo">
+            </a>
+            <ul class='lo_jo'>
+                <li><a href='../login/login.html'>로그인</a></li>
+                <li>|</li>
+                <li><a href='../join/join.html'>회원가입</a></li>
+            </ul>
+        </h1>
+        <nav>
+            <ul class='gnb'>
+                <li><a href='../main.html'>홈</a></li>
+                <li><a href='../city/city.html'>도시별 장소</a></li>
+                <li><a href='../theme/theme.html'>테마별 장소</a></li>
+                <li><a href='../calender/calender.html'>캘린더</a></li>
+                <li class="on"><a href="../mypage-couple/MyPage-couple.html">마이페이지</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contents">
+        <p>마이페이지</p>
+        <h2>장소 방문 후기 등록</h2>
+        <div class="review">
+            <div class="place">
+                <p>장소 찾기</p>
+                <input class="jibun" id="member_post"  type="text" readonly>
+                <input class="add" id="member_addr" type="text" readonly>
+                <input class="detail" type="text" id="detailAddress" placeholder="검색 후 상세주소를 입력해주세요.">
+                <img src="../img/search.png" alt="search" onclick="findAddr()">
+            </div>
+            <div class="check">
+                <p>얼마나 만족하셨나요?</p>
+                <form class="mb-3" name="myform" id="myform" method="post" action="./save">
+                    <fieldset>
+                        <input type="radio" name="reviewStar" value="5" id="rate1"><label for="rate1">★</label>
+                        <input type="radio" name="reviewStar" value="4" id="rate2"><label for="rate2">★</label>
+                        <input type="radio" name="reviewStar" value="3" id="rate3"><label for="rate3">★</label>
+                        <input type="radio" name="reviewStar" value="2" id="rate4"><label for="rate4">★</label>
+                        <input type="radio" name="reviewStar" value="1" id="rate5"><label for="rate5">★</label>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="review_nae">
+                <textarea placeholder="후기를 작성해주세요."></textarea>
+            </div>
+            <div class="pic">
+                <p>사진 등록</p>
+                <div class="picture">
+                    <img  src="../img/plus.png" alt="plus">
+                </div>
+            </div>
+            <button class="cancel"><a href="#">취소하기</a></button>
+            <button class="registration"><a onclick="alert('등록되었습니다.');" href="#">등록하기</a></button>
+        </div>
+    </div>
+    <footer>
+        <h1>
+            <img src='../img/logo_g.png'></img>
+        </h1>
+        <nav>
+            <ul class='fo_menu'>
+                <li><a href='#'>이용약관</a></li>
+                <li><a href='#'>개인정보처리방침</a></li>
+                <li><a href='#'>마이페이지</a></li>
+                <li><a href='#'>개인정보수정</a></li>
+            </ul>           
+        </nav>
+        <p>ⓒ 어디갈까? ALL RIGHTS RESERVED</p>
+    </footer>   
+</body>
+<script>
+    function findAddr(){
+        new daum.Postcode({
+            oncomplete: function(data) {
+                console.log(data);
+                // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                var roadAddr = data.roadAddress; // 도로명 주소 변수
+                var jibunAddr = data.jibunAddress; // 지번 주소 변수
+                // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                document.getElementById('member_post').value = data.zonecode;
+                if(roadAddr !== ''){
+                    document.getElementById("member_addr").value = roadAddr;
+                } 
+                else if(jibunAddr !== ''){
+                    document.getElementById("member_addr").value = jibunAddr;
+                }
+            }
+        }).open();
+    }
+    </script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+</html>

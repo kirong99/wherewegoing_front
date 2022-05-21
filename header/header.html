@@ -1,17 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./header.css">
-    <title>Document</title>
+    <script src="../js/jquery-1.12.3.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".alert_ico, .alert").hover(function(){
+            $(".alert").stop().fadeIn();
+            },function(){
+                $(".alert").stop().fadeOut();
+            });
+        });
+    </script>
+    <title>어디갈까?</title>
 </head>
 <body>
     <header>
         <h1>
+            <div class="new"></div>
+            <img class="alert_ico" src="./img/alert.png" alt="alert">
+            <div class="alert">
+                <div class="al">
+                    <div class="img"></div>
+                    <h3>해피본아트</h3>
+                    <p>@eunji 가보자!</p>
+                    <img src="./img/close.png" alt="close">
+                </div>
+                <div class="al">
+                    <div class="img"></div>
+                    <h3>해피본아트</h3>
+                    <p>@eunji 가보자!</p>
+                    <img src="./img/close.png" alt="close">
+                </div>
+                <div class="al">
+                    <div class="img"></div>
+                    <h3>해피본아트</h3>
+                    <p>@eunji 가보자!</p>
+                    <img src="./img/close.png" alt="close">
+                </div>
+            </div>
             <a href='#'>
-                <img src='../img/logo.png' alt='logo'></img>
+                <img src='./img/logo.png' alt='logo'></img>
             </a>
             <ul class='lo_jo'>
                 <li><a href='#'>로그인</a></li>

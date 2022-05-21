@@ -12,7 +12,6 @@ a{
 body{
     font-family: 'Noto Sans KR', sans-serif;
 }
-
 .contents{
     width: 1260px;
     margin: 0 auto;
@@ -72,13 +71,13 @@ body{
     float: left;
     margin-top: 30px;
 }
-.contents .place .img .em:nth-child(2){
+.contents .place .img .sub .em:nth-child(1){
     background: #6167B2;
 }
-.contents .place .img .em:nth-child(3){
+.contents .place .img .sub .em:nth-child(2){
     background: red;
 }
-.contents .place .img .em:nth-child(4){
+.contents .place .img .sub .em:nth-child(3){
     background: yellow;
 }
 .contents .place .ex{

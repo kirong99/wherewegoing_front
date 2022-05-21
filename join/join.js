@@ -25,7 +25,13 @@ document.querySelector("#check_nick").addEventListener("click", ()=>{
     }
 });
 
-function join_check() {
+$(document).ready(function(){
+    $('.join_bt').click(function(){
+        return join_check();
+    })
+});
+
+join_check = function() {
     var id = document.getElementById("id");
     var password = document.getElementById("password");
     var password_check = document.getElementById("password_check");
@@ -98,4 +104,6 @@ function join_check() {
         phone_check.focus();
         return false;
     }
+
+    document.join.submit();
 }

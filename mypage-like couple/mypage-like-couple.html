@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./mypage-like-couple.css">
     <link rel="stylesheet" href="../header/header.css">
-    <script src="../js/script.js"></script>
     <script src="../js/jquery-1.12.3.js"></script>
+    <!-- <script src="../js/script.js"></script> -->
     <title>Document</title>
 </head>
 
@@ -53,25 +53,25 @@
     <div class="cont_place">
         <div class="tab">
             <ul class="tabs">
-                <li class="on" data-tab="tab-1">
-                    <p>비오</p>
-                </li>
-                <li data-tab="tab-2">
-                    <p>은지</p>
+                <li class="tablinks on" data-tab="tab-1">
+                    비오
+                <li class="tablinks" data-tab="tab-2">
+                    은지
                 </li>
             </ul>
         </div>
-        <div class="txt">
-            <h3 class="place">장소</h3>
-            <a href=""><h3 class="more">더보기<span><img src="../img/next.png" alt="next"></span></h3></a>
-        </div>
+      
         <!--커플1 좋아요 부분-->
         <div id="tab-1" class="box on">
+            <div class="txt">
+                <h3 class="place">장소</h3>
+                <a href=""><h3 class="more">더보기<span><img src="../img/next.png" alt="next"></span></h3></a>
+            </div>
             <div class="top">
-                <ul>
+                <ul class="on">
                     <li class="left">
                         <a href="../placepost/placepost.html"><img src="../img/Top_1.png" alt=""></a>
-                        <div class="box">
+                        <div class="cont_box">
                             <div>
                                 <p>해피본아트</p>
                                 <p>미술</p>
@@ -92,7 +92,7 @@
                     </li>
                     <li class="right">
                         <a href="../placepost/placepost.html"><img src="../img/Top_1.png" alt=""></a>
-                        <div class="box">
+                        <div class="cont_box">
                             <div>
                                 <p>해피본아트</p>
                                 <p>미술</p>
@@ -117,7 +117,7 @@
                 <ul>
                     <li class="left">
                         <a href="../placepost/placepost.html"><img src="../img/Top_1.png" alt=""></a>
-                        <div class="box">
+                        <div class="cont_box">
                             <div>
                                 <p>해피본아트</p>
                                 <p>미술</p>
@@ -138,7 +138,7 @@
                     </li>
                     <li class="right">
                         <a href="../placepost/placepost.html"><img src="../img/Top_1.png" alt=""></a>
-                        <div class="box">
+                        <div class="cont_box">
                             <div>
                                 <p>해피본아트</p>
                                 <p>미술</p>
@@ -162,11 +162,15 @@
         </div>
         <!--커플2 좋아요 부분-->
         <div id="tab-2" class="box">
+            <div class="txt">
+                <h3 class="place">장소</h3>
+                <a href=""><h3 class="more">더보기<span><img src="../img/next.png" alt="next"></span></h3></a>
+            </div>
             <div class="top">
                 <ul>
                     <li class="left">
                         <a href="../placepost/placepost.html"><img src="../img/Top_1.png" alt=""></a>
-                        <div class="box">
+                        <div class="cont_box">
                             <div>
                                 <p>해피본아트</p>
                                 <p>미술</p>
@@ -187,7 +191,7 @@
                     </li>
                     <li class="right">
                         <a href="../placepost/placepost.html"><img src="../img/Top_1.png" alt=""></a>
-                        <div class="box">
+                        <div class="cont_box">
                             <div>
                                 <p>해피본아트</p>
                                 <p>미술</p>
@@ -212,7 +216,7 @@
                 <ul>
                     <li class="left">
                         <a href="../placepost/placepost.html"><img src="../img/Top_1.png" alt=""></a>
-                        <div class="box">
+                        <div class="cont_box">
                             <div>
                                 <p>해피본아트</p>
                                 <p>미술</p>
@@ -280,6 +284,7 @@
         </nav>
         <p>ⓒ 어디갈까? ALL RIGHTS RESERVED.</p>
     </footer>
+    <script src="mypage-like.js"></script>
 </body>
 
 </html>

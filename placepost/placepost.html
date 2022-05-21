@@ -7,6 +7,8 @@
     <title>어디갈까?</title>
     <link rel="stylesheet" href="./placepost.css" type="text/css">
     <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
     <script src="../js/jquery-1.12.3.js"></script>
     <script src="../js/script.js"></script>
 </head>
@@ -37,14 +39,16 @@
         <div class="place">
             <h2><span>해피본아트</span><span class="kind">미술</span></h2>
             <div class="img">
-                <div class="main">
+                <div class="slide main">
                     <img class="arrow" src="../img/left.png" alt="arrow-left">
-                    <div class="main_em"></div>
+                    <div class="slide main_em"></div>
                     <img class="arrow-ri" src="../img/right.png" alt="arrow-right">
                 </div>
-                <div class="em"></div>
-                <div class="em"></div>
-                <div class="em"></div>
+                <div class="slide sub">
+                    <div class="em"></div>
+                    <div class="em"></div>
+                    <div class="em"></div>
+                </div>
             </div>
             <div class="ex">
                 <h4><span class="tit">영업시간</span><span class="tit_ex">평일 11시~21시/토요일 9시~16시</span><span class="im">(일요일 정기휴무)</span></h4>
@@ -137,5 +141,9 @@
         </nav>
         <p>ⓒ 어디갈까? ALL RIGHTS RESERVED</p>
     </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="placepost.js"></script>
 </body>
 </html>

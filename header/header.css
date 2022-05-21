@@ -5,6 +5,15 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
 header{width: 100%;height: 180px;z-index: 10;position: relative}
 header h1{width: 100%;height: 100px;text-align: center;}
+.new{width: 6px; height: 6px; border-radius: 50px; background: red;position: absolute; top: 34px; left: 717px;}
+.alert_ico{position: absolute; top: 34px; left: 687px;}
+.alert{width: 336px; height: 257px; background-color: #fff;z-index: 100;position: absolute;top: 73px;left: 671px; display: none;}
+.alert .al{width: 320px; height: 80px;position: relative; border-bottom: .5px solid #B6B6B6;cursor: pointer; margin: 0 auto;}
+.alert .al:nth-child(3){border: none;}
+.alert .al .img{width: 60px;height: 60px; background: #B6B6B6;float: left;margin: 10px 10px 10px 12px;}
+.alert .al h3{font-size: 11px; float: left;margin: 10px 0;}
+.alert .al p{font-size: 10px; color: #707070;width: 209px;height: 34px;float: left;text-align: left;overflow: hidden; word-wrap:break-word; text-overflow: ellipsis; word-break:break-all; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;}
+.alert .al img{position: absolute;top: 37px; right: 12px; width: 10px; height: 10px; cursor: pointer;}
 header .lo_jo{width: 400px;height: 30px;position: absolute;right: 360px;top: 40px}
 header .lo_jo li{font-size: 16px;float: left;color: #707070;margin-right: 10px;}
 header .lo_jo li:nth-child(3){margin-right: 0;}
@@ -14,6 +23,3 @@ header nav .gnb{text-align: center;padding-top: 28px;margin-left: 34%}
 header nav .gnb>li{width: 100px;float: left;height: 50px;font-size: 16px;box-sizing: border-box;text-align: center;margin-right: 30px;}
 header nav .gnb>li:hover>a{border-bottom: 4px solid #6167B2;}
 header nav .gnb>li>a{width: 100%;height: 100%;display: block;}
-
-
-
