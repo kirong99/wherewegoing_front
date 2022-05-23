@@ -163,28 +163,17 @@
     <div class="layer">
         <h2>커플 관리</h2>
         <p>커플 연동하고 싶은 사람의 <span>아이디</span> 또는 <span>이메일</span> 또는 <span>닉네임</span>을 입력해주세요!</p>
-        <div class="search">
-            <input type="text" placeholder="입력해주세요!" class="id">
-            <button class="but"><a href="#">검색</a></button>
-        </div>
+        <form class="search">
+            <input type="text" placeholder="입력해주세요!" class="id" id="value" onkeyup="filter()">
+            <button class="searchBtn">검색</button>
+        </form>
         <div class="list">
-            <ul>
-                <li>
-                    <p>아이디<span>hi1234</span>닉네임<span>하이1234</span></p>
-                    <p>이메일<span>hi1234@naver.com</span></p>
-                </li>
-                <li>
-                    <p>아이디<span>hi1234</span>닉네임<span>하이1234</span></p>
-                    <p>이메일<span>hi1234@naver.com</span></p>
-                </li>
-                <li>
-                    <p>아이디<span>hi1234</span>닉네임<span>하이1234</span></p>
-                    <p>이메일<span>hi1234@naver.com</span></p>
-                </li>
+            <ul id="list_d">
             </ul>
         </div>
         <a href="#" class="close">닫기</a>
     </div>
+    <script src="mypage.js"></script>
 </body>
 
 </html>
