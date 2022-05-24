@@ -24,9 +24,7 @@ function showList(val='') {
         if(user.id.includes(val)){
             const li = document.createElement('li');
             li.innerHTML = `
-            <p>아이디 : ${user.id}</p>
-            <p>닉네임 : ${user.nickname}</p>
-            <p>이메일 : ${user.email}</p>
+            <p>아이디 : ${user.id}<span>닉네임 : ${user.nickname}</span></p>
             `
             list.appendChild(li);
         }

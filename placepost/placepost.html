@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>어디갈까?</title>
     <link rel="stylesheet" href="./placepost.css" type="text/css">
-    <link rel="stylesheet" href="../header/header.css">
-    <link rel="stylesheet" href="slick/slick.css">
-    <link rel="stylesheet" href="slick/slick-theme.css">
     <script src="../js/jquery-1.12.3.js"></script>
     <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="./swiper/swiper.min.css">
 </head>
 <body>
     <header>
@@ -29,8 +27,8 @@
                 <li><a href="../main.html">홈</a></li>
                 <li><a href="../city/city.html">도시별 장소</a></li>
                 <li class="on"><a href="../theme/theme.html">테마별 장소</a></li>
-                <li><a href="../calender/calender.html">캘린더</a></li>
-                <li><a href="../mypage/MyPage.html">마이페이지</a></li>
+                <li><a href="#">캘린더</a></li>
+                <li><a href="#">마이페이지</a></li>
             </ul>
         </nav>
     </header>
@@ -39,15 +37,24 @@
         <div class="place">
             <h2><span>해피본아트</span><span class="kind">미술</span></h2>
             <div class="img">
-                <div class="slide main">
-                    <img class="arrow" src="../img/left.png" alt="arrow-left">
-                    <div class="slide main_em"></div>
-                    <img class="arrow-ri" src="../img/right.png" alt="arrow-right">
+                <div class="swiper-container gallery-top">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(../img/placepost_big1.png)"></div>
+                        <div class="swiper-slide" style="background-image:url(../img/placepost_big2.png)"></div>
+                        <div class="swiper-slide" style="background-image:url(../img/placepost_big3.png)"></div>
+                        <div class="swiper-slide" style="background-image:url(../img/placepost_big4.png)"></div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
                 </div>
-                <div class="slide sub">
-                    <div class="em"></div>
-                    <div class="em"></div>
-                    <div class="em"></div>
+                <div class="swiper-container gallery-thumbs">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(../img/placepost_sm1.png)"></div>
+                        <div class="swiper-slide" style="background-image:url(../img/placepost_sm2.png)"></div>
+                        <div class="swiper-slide" style="background-image:url(../img/placepost_sm3.png)"></div>
+                        <div class="swiper-slide" style="background-image:url(../img/placepost_sm4.png)"></div>
+                    </div>
                 </div>
             </div>
             <div class="ex">
@@ -64,7 +71,6 @@
         <p>방문 후기</p>
         <p class="more"><a href="../themepostmore/themepostmore.html">더보기 ></a></p>
         <div class="review">
-            <img class="arrow arrow-le" src="../img/left.png" alt="arrow_left">
             <div class="review_1">
                 <p class="id">park_jae</p>
                 <div class="star">
@@ -94,7 +100,6 @@
                     다만 가격대가 좀 높아요..
                 </p>
             </div>
-            <img class="arrow arrow-ri" src="../img/right.png" alt="arrow_right">
         </div>
     </div>
     <div class="line"></div>
@@ -141,9 +146,23 @@
         </nav>
         <p>ⓒ 어디갈까? ALL RIGHTS RESERVED</p>
     </footer>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script src="placepost.js"></script>
+    <script src="./swiper/swiper.min.js"></script>
+    <script>
+        var galleryTop = new Swiper('.gallery-top', {
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 10,
+        });
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+            spaceBetween: 10,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            touchRatio: 0.2,
+            slideToClickedSlide: true
+        });
+        galleryTop.params.control = galleryThumbs;
+        galleryThumbs.params.control = galleryTop;
+        
+        </script>
 </body>
 </html>

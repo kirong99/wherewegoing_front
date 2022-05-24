@@ -12,6 +12,72 @@ a{
 body{
     font-family: 'Noto Sans KR', sans-serif;
 }
+
+header{
+    width: 100%;
+    height: 180px;
+    z-index: 10;
+    position: relative;
+}
+header h1{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+header .lo_jo{
+    width: 130px;
+    height: 30px;
+    position: absolute;
+    right: 360px;
+    top: 40px;
+}
+header .lo_jo li{
+    font-size: 16px;
+    float: left;
+    color: #707070;
+    margin-right: 10px;
+}
+header .lo_jo li:nth-child(3){
+    margin-right: 0;
+}
+header .lo_jo li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+header nav{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #B6B6B6;
+    border-top: 1px solid #B6B6B6;
+    background: #fff;
+}
+header nav .gnb{
+    text-align: center;
+    padding-top: 28px;
+    margin-left: 34%;
+}
+header nav .gnb>li{
+    width: 100px;
+    float: left;
+    height: 50px;
+    font-size: 16px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: 30px;
+}
+header nav .gnb>li:hover>a{
+    border-bottom: 4px solid #6167B2;
+}
+header nav .gnb>li.on>a{
+    border-bottom: 4px solid #6167B2;
+    font-weight: bold;
+}
+header nav .gnb>li>a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
 .contents{
     width: 1260px;
     margin: 0 auto;
@@ -39,47 +105,41 @@ body{
     font-weight: normal;
     color: #3E3E3E;
 }
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+.gallery-top {
+    height: 264px;
+    width: 264px;
+}
+.gallery-thumbs {
+    height: 38%;
+    box-sizing: border-box;
+    padding: 30px 0 0 0;
+}
+.gallery-thumbs .swiper-slide {
+    width: 130px;
+    height: 130px;
+    opacity: 0.4;
+}
+.gallery-thumbs .swiper-slide-active {
+    opacity: 1;
+}
 .contents .place .img{
     padding-top: 40px;
     margin: 0 auto;
     width: 390px;
     height: 424px;
-}
-.contents .place .img .main{
-    width: 386px;
-    height: 264px;
     position: relative;
 }
-.contents .place .img .main .arrow, .contents .place .img .main .arrow-ri{
-    position: absolute;
-    top: 113px;
-    cursor: pointer;
-}
-.contents .place .img .main .arrow-ri{
-    right: 0;
-}
-.contents .place .img .main_em{
-    background: #707070;
-    width: 264px;
-    height: 264px;
-    margin-left: 68px;
-}
-.contents .place .img .em{
-    background: #707070;
-    width: 130px;
-    height: 130px;
-    float: left;
-    margin-top: 30px;
-}
-.contents .place .img .sub .em:nth-child(1){
-    background: #6167B2;
-}
-.contents .place .img .sub .em:nth-child(2){
-    background: red;
-}
-.contents .place .img .sub .em:nth-child(3){
-    background: yellow;
-}
+
 .contents .place .ex{
     margin: 0 auto;
     padding-top: 40px;
@@ -140,21 +200,8 @@ body{
 }
 .visit .review{
     margin-top: 40px;
-    position: relative;
     width: 1171px;
     height: 187px;
-}
-.visit .review .arrow{
-    position: absolute;
-    top: 100px;
-    width: 11px;
-    height: 18px;
-}
-.visit .review .arrow-le{
-    left: 48px;
-}
-.visit .review .arrow-ri{
-    right: 0;
 }
 .visit .review>div{
     float: left;
@@ -247,6 +294,10 @@ body{
     margin-top: 10px;
     float: right;
     margin-right: 50px;
+}
+.comment .save.on{
+    background-size: 30px 30px;
+    background-image: url(../img/bookmark.png);
 }
 .comment_full{
     width: 900px;

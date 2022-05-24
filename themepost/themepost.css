@@ -13,6 +13,71 @@ body{
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+header{
+    width: 100%;
+    height: 180px;
+    z-index: 10;
+    position: relative;
+}
+header h1{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+header .lo_jo{
+    width: 130px;
+    height: 30px;
+    position: absolute;
+    right: 360px;
+    top: 40px;
+}
+header .lo_jo li{
+    font-size: 16px;
+    float: left;
+    color: #707070;
+    margin-right: 10px;
+}
+header .lo_jo li:nth-child(3){
+    margin-right: 0;
+}
+header .lo_jo li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+header nav{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #B6B6B6;
+    border-top: 1px solid #B6B6B6;
+    background: #fff;
+}
+header nav .gnb{
+    text-align: center;
+    padding-top: 28px;
+    margin-left: 34%;
+}
+header nav .gnb>li{
+    width: 100px;
+    float: left;
+    height: 50px;
+    font-size: 16px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: 30px;
+}
+header nav .gnb>li:hover>a{
+    border-bottom: 4px solid #6167B2;
+}
+header nav .gnb>li.on>a{
+    border-bottom: 4px solid #6167B2;
+    font-weight: bold;
+}
+header nav .gnb>li>a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
 .contents{
     width: 1260px;
     margin: 0 auto;
@@ -33,49 +98,36 @@ body{
     margin: 0 auto;
     position: relative;
 }
-.box .arrow{
-    position: absolute;
-    top: 441px;
+.swiper-container {
+    width: 100%;
+    height: 885px;
 }
-.box .left_arrow{
-    left: 19px;
-}
-.box .right_arrow{
-    right: 19px;
-}
-.box .img{
-    width: 800px;
-    height: 800px;
-    margin: 50px 50px 20px 50px;
-    background: #B6B6B6;
-}
-.box .where{
-    margin: 0 auto;
-    width: 125px;
-    height: 15px;
-}
-.box .where>div{
-    float: left;
-}
-.box .where div.on{
-    background-color: #6167B2;
-}
-.box .where .circle{
-    width: 15px;
-    height: 15px;
-    border-radius: 50px;
-    border: 1px solid #6167B2;
-    margin-right: 10px;
-}
-.box .where .circle:nth-child(5){
-    margin-right: 0;
+.swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
 .box .save{
     position: absolute;
-    top: 860px;
+    top: 850px;
     right: 50px;
     width: 26px;
-    height:26px
+    height:26px;
+    z-index: 2;
+}
+.box .save.on{
+    background-size: 26px 26px;
+    background-image: url(../img/bookmark.png);
 }
 .box p{
     margin: 20px 50px 50px 50px;

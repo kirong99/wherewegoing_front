@@ -86,7 +86,7 @@ footer p{color: #707070;font-size: 16px;position: absolute;left: 844px;bottom: 4
 .layer .search button a{color: #fff;}
 /* .layer .list{display: none;} */
 .layer .list ul{overflow: hidden;}
-.layer .list ul li{width: 650px;height: 110px;margin: 0 auto;border: 1px solid #707070;margin-top: 30px;}
+.layer .list ul li{width: 650px;height: 110px;margin: 0 auto;border: 1px solid #707070;margin-top: 30px;line-height: 80px;}
 .layer .list ul li:first-child{margin-top: 45px;}
 .layer .list ul li p{width: 650px;margin: 10px;float: left;}
 .layer .list ul li p span{margin:0 30px;}
