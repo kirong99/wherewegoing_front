@@ -1,22 +1,22 @@
 $(document).ready( function() {
-    $(".course-select-box h3").click(function(){
+    $(".course-select-box h3").click(function(){ //도시별
         $(".course-select-box h3, .course-select-box .check, .course-select-box ul").removeClass("on");
         $(this).addClass("on");
         $(this).next("div").addClass("on");
         $(".on").next("ul").addClass("on");
     });
-    $(".theme .theme_list>div").click(function(){
+    $(".theme .theme_list>div").click(function(){ //테마별
         $(".theme .theme_list>div, .theme .theme_list ul").removeClass("on");
         $(this).addClass("on");
         $(this).next("ul").addClass("on");
     });
-    $(".review_all .review").click(function(){
+    $(".review_all .review").click(function(){ //모달(후기)
         $(".modal").fadeIn();
     });
     $(".btn").click(function(){
         $(".modal").fadeOut();
     });
-    $(".box .save").click(function(){
+    $(".box .save").click(function(){ //좋아요
         if($(this).hasClass("on")){
             $(this).removeClass("on");
         } else{
@@ -30,7 +30,7 @@ $(document).ready( function() {
             $(this).addClass("on");
         }
     });
-    $(".popup").click(function(e){
+    $(".popup").click(function(e){ //모달(커플 관리)
         e.preventDefault();
         // $(".layer").css("display","block");
         $(".layer").show();
@@ -43,56 +43,7 @@ $(document).ready( function() {
         $(".layer-bg").hide();
     });
 
-    document.getElementById('currentDate').value = new Date().toISOString().substring(0, 10);
-
-    $(".theme .theme_list>div").click(function(){
-        $(".theme .theme_list>div, .theme .theme_list ul").removeClass("on");
-        $(this).addClass("on");
-        $(this).next("ul").addClass("on");
-    });
-});
-document.addEventListener('DOMContentLoaded', function () {
-    var calendarEl = document.getElementById('calendar');
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-        height: 600,
-        contentHeight: 600,
-        initialView: 'dayGridMonth',
-        editable: true,
-        selectable: true,
-        nowIndicator: true,
-        locale: 'ko',
-        eventAdd: function (obj) {
-            console.log(obj);
-        },
-        eventChange: function (obj) {
-            console.log(obj);
-        },
-        eventRemove: function (obj) {
-            console.log(obj);
-        },
-    })
-    const calData = {
-        calendar,
-        events: [
-            {
-                title: 'event1',
-                start: '2022-05-02'
-            },
-            {
-                title: 'event2',
-                start: '2022-05-07',
-                end: '2022-05-08'
-            },
-            {
-                title: 'event3',
-                start: '2022-05-23'
-            }
-        ]
-    }
-    calData.calendar.render();
-    calData.events.forEach(function(Element){
-        console.log(Element)
-    })
+    // document.getElementById('currentDate').value = new Date().toISOString().substring(0, 10); //?
 });
 
 

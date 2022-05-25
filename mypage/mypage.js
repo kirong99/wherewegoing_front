@@ -10,13 +10,13 @@ const user = [
         email : 'hg1234@naver.com'
     },
     {
-        id : 'hz1234',
+        id : 'sadsafsad',
         nickname : 'hz1234',
-        email : 'hz1234@naver.com'
+        email : 'giryowodfssadsd@naver.com'
     }
 ]
 
-const list =document.getElementById('list_d');
+const list = document.getElementById('list_d');
 
 function showList(val='') {
     list.innerHTML = '';
@@ -24,16 +24,17 @@ function showList(val='') {
         if(user.id.includes(val)){
             const li = document.createElement('li');
             li.innerHTML = `
-            <p>아이디 : ${user.id}<span>닉네임 : ${user.nickname}</span></p>
+                <p>아이디 : <span>${user.id}</span>닉네임 : <span>${user.nickname}</span></p>
+                <p>이메일 : <span>${user.email}</span></p>
             `
             list.appendChild(li);
         }
-    })
+    });
 }
 
 showList();
 
-const searchInput = document.getElementById('value');
+const searchInput = document.getElementById('search');
 
 const searchBtn = document.getElementById('searchBtn');
 
@@ -41,4 +42,25 @@ searchBtn.addEventListener('click', (e) => {
     e.preventDefault();
     const val = searchInput.value;
     console.log(val);
-})
+    showList(val);
+
+
+});
+
+
+
+$(document).ready( function() {
+
+$(".popup").click(function(e){ //모달(커플 관리)
+    e.preventDefault();
+    // $(".layer").css("display","block");
+    $(".layer").show();
+    $(".layer-bg").show();
+    
+});
+$(".layer .close").click(function(e){
+    // $(".layer").css("display","none");
+    $(".layer").hide();
+    $(".layer-bg").hide();
+});
+});

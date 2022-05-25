@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./MyPage.css">
     <link rel="stylesheet" href="../header/header.css">
     <script src="../js/jquery-1.12.3.js"></script>
-    <script src="../js/script.js"></script>
+    <!-- <script src="../js/script.js"></script> -->
     <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
@@ -163,17 +163,20 @@
     <div class="layer">
         <h2>커플 관리</h2>
         <p>커플 연동하고 싶은 사람의 <span>아이디</span> 또는 <span>이메일</span> 또는 <span>닉네임</span>을 입력해주세요!</p>
-        <form class="search">
-            <input type="text" placeholder="입력해주세요!" class="id" id="value" onkeyup="filter()">
-            <button class="searchBtn">검색</button>
-        </form>
+        <div id="search-form">
+            <input type="text" placeholder="입력해주세요!" id="search" class="id">
+            <button id="searchBtn" type="button">검색</button>
+        </div>
         <div class="list">
             <ul id="list_d">
+                <!-- <li class="listInner"><p><span class="id">hi</span><span class="nick">hi</span></p></li>
+                <li class="listInner"><p><span class="id">hg</span><span class="nick">hg</span></p></li>
+                <li class="listInner"><p><span class="id">hh</span><span class="nick">hh</span></p></li> -->
             </ul>
         </div>
         <a href="#" class="close">닫기</a>
     </div>
-    <script src="mypage.js"></script>
+    <script type="text/javascript" src="./mypage.js"></script>
 </body>
 
 </html>

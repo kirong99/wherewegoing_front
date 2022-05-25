@@ -12,6 +12,55 @@ a{
 body{
     font-family: 'Noto Sans KR', sans-serif;
 }
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    z-index: 100;
+    display: none;
+}
+.modal .modal_inner{
+    width: 700px;
+    height: 700px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.modal .modal_inner .id{
+    font-size: 20px;
+    float: left;
+    padding: 30px;
+}
+.modal .modal_inner .star{
+    width: 135px;
+    float: left;
+    padding: 30px 0;
+}
+.modal .modal_inner .btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 20px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.modal .modal_inner .img{
+    width: 400px;
+    height: 400px;
+    background: #707070;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+.modal .modal_inner .review_nae{
+    font-size: 16px;
+    height: 180px;
+    width: 600px;
+    margin: 10px 50px 10px 50px;
+}
 .contents{
     width: 1260px;
     margin: 0 auto;
