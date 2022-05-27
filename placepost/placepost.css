@@ -297,7 +297,7 @@ header nav .gnb>li>a{
 }
 .comment .save.on{
     background-size: 30px 30px;
-    background-image: url(../img/bookmark.png);
+    background-image: url(../img/heart_full.png);
 }
 .comment_full{
     width: 900px;

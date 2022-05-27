@@ -7,9 +7,9 @@ ul{list-style: none;}
 .title{width: 1220px;height: 20px;display: flex;justify-content: space-between;margin: 0 auto; margin-top: 20px;color: #cccccc;font-size: 15px;font-weight: 500;color: #707070;}
 
 /* 비로그인 - 로그인 권유 */
-.alert{width: 1260px;height: 138px;margin: 0 auto;text-align: center;position: relative;top: 52px;}
-.alert h3{font-size: 23px;font-weight: 700;}
-.alert span a{width: 150px;height: 40px;background: #6167b2;font-size: 15px;font-weight: 500;color: #ffffff;position: relative;left: 50px;padding: 10px 25px;}
+.alert_not{width: 1260px;height: 138px;margin: 0 auto;text-align: center;position: relative;top: 52px;}
+.alert_not h3{font-size: 23px;font-weight: 700;}
+.alert_not span a{width: 150px;height: 40px;background: #6167b2;font-size: 15px;font-weight: 500;color: #ffffff;position: relative;left: 50px;padding: 10px 25px;}
 
 /* 배경화면 투명도 */
 .blur{width: 1260px;height: 1020px;margin: 0 auto;opacity: .04;}

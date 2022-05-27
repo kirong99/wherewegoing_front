@@ -43,8 +43,6 @@ searchBtn.addEventListener('click', (e) => {
     const val = searchInput.value;
     console.log(val);
     showList(val);
-
-
 });
 
 
