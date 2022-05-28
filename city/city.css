@@ -176,6 +176,10 @@ body{
     float: left;
     margin: 20px 15px 20px 20px;
 }
+.course-select-box ul li .all_img img{
+    width: 160px;
+    height: 160px;
+}
 .course-select-box ul li .data{
     height: 160px;
     top: 20px;
