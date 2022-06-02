@@ -7,6 +7,7 @@
     <title>어디갈까?</title>
     <link rel="stylesheet" href="./city.css" type="text/css">
     <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="search.css">
     <script src="../js/jquery-1.12.3.js"></script>
     <script src="../js/script.js"></script>
     <script src="moment.js"></script>
@@ -57,17 +58,13 @@
                 </select>
             </div>
         </div>
-        <div class="map">
-            <div></div>
-        </div>
+        <div id="map"></div>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ab5085bead1c5ce2e87ca47583083577"></script>
+        <script src="map.js"></script>
         <div class="course-select-box">
             <div class="line"></div>
             <h3 class="on">전체</h3>
             <div class="check">
-                <label class="open" htmlFor="open">   
-                    <input type="checkbox" id="open"/>
-                    <p>영업 중</p>만 확인
-                </label>
                 <select name='choice' class='choice'>
                     <option value="distance">거리순</option>
                     <option value="popular">조회순</option>
@@ -97,7 +94,7 @@
                         <p class="location">현 위치에서 104m</p>
                     </div>
                 </a></li>
-                <li id="find3"><a href="#">
+                <li id="find"><a href="#">
                     <div class="all_img"><img src="../img/place/레드버튼.jpg" alt="레드버튼"></div>
                     <div class="data">
                         <p class="state" id="state">영업 중</p>
