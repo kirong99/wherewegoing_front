@@ -168,18 +168,15 @@ header nav .gnb>li>a{
     margin-left: 2px;
     font-weight: normal;
 } 
-.contents .place .map{
-    padding-top: 20px;
+.contents .place #map{
     margin: 0 auto;
+    margin-top: 20px;
     width: 260px;
     height: 280px;
-}
-.contents .place .map .map_img{
-    width: 260px;
-    height: 260px;
     background-color: #e4e4e4;
     border: 1px solid #6167B2;
 }
+
 .visit {
     margin: 0 auto;
     width: 1260px;

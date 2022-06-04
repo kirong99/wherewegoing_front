@@ -23,6 +23,7 @@ function showList(val='') {
     const res = user.forEach(user => {
         if(user.id.includes(val)){
             const li = document.createElement('li');
+            li.id = 'send';
             li.innerHTML = `
                 <p>아이디 : <span>${user.id}</span>닉네임 : <span>${user.nickname}</span></p>
                 <p>이메일 : <span>${user.email}</span></p>
@@ -62,3 +63,8 @@ $(".layer .close").click(function(e){
     $(".layer-bg").hide();
 });
 });
+
+document.getElementById("send").addEventListener('click',function(){
+    alert("")
+})
+
