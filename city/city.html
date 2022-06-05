@@ -64,7 +64,6 @@
         </div>
         <div id="map"></div>
         <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ab5085bead1c5ce2e87ca47583083577&libraries=services"></script>
-        <script src="map.js"></script>
         <div class="course-select-box">
             <div class="line"></div>
             <h3 class="on">전체</h3>
@@ -84,7 +83,7 @@
                         <p><span>영업시간</span>매일 <span class="time">08:00~22:00</span><span class="notice">(아이스크림 마감:21시)</span></p>
                         <p><span>전화번호</span>031-466-6260</p>
                         <p><span>위치</span>경기 안양시 만안구 만안로 224</p>
-                        <p class="location">현 위치에서 104m</p>
+                        <p class="location">현 위치에서 <span id="distance">104m</span></p>
                     </div>
                 </a></li>
                 <li><a href="#">
@@ -103,7 +102,7 @@
                     <div class="data" id="data">
                         <p class="state" id="state">영업 중</p>
                         <h4>보드게임카페 레드버튼 안양점</h4>
-                        <p><span>영업시간</span>월~목<span class="time">13:00~01:00</span> 금 13:00~02:00 토 12:00~02:00 일 12:00~01:00</p>
+                        <p><span>영업시간</span>월~목 <span class="time">13:00~01:00</span>금 13:00~02:00 토 12:00~02:00 일 12:00~01:00</p>
                         <p><span>전화번호</span>031-441-3799</p>
                         <p><span>위치</span>경기 안양시 만안구 장내로 149번길 41 3층</p>
                         <p class="location">현 위치에서 104m</p>
@@ -180,10 +179,10 @@
             </ul>
             <h3>카페</h3>
             <div class="check">
-                <label class="open" htmlFor="open">   
+                <!-- <label class="open" htmlFor="open">   
                     <input type="checkbox" id="open"/>
                     <p>영업 중</p>만 확인
-                </label>
+                </label> -->
                 <select name='choice' class='choice'>
                     <option value="distance">거리순</option>
                     <option value="popular">인기순</option>
@@ -426,5 +425,6 @@
         <p>ⓒ 어디갈까? ALL RIGHTS RESERVED</p>
     </footer>
     <script src="city.js"></script>
+    <script src="map.js"></script>
 </body>
 </html>
