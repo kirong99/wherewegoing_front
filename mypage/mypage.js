@@ -46,9 +46,12 @@ searchBtn.addEventListener('click', (e) => {
     showList(val);
 });
 
+const send = document.getElementById("send");
+send.addEventListener('click',function(){
+    confirm(user.id + "님에게 커플 연동을 신청하시겠습니까?");
+});
 
-
-$(document).ready( function() {
+$(document).ready(function() {
 
 $(".popup").click(function(e){ //모달(커플 관리)
     e.preventDefault();
@@ -57,6 +60,7 @@ $(".popup").click(function(e){ //모달(커플 관리)
     $(".layer-bg").show();
     
 });
+
 $(".layer .close").click(function(e){
     // $(".layer").css("display","none");
     $(".layer").hide();
@@ -64,7 +68,4 @@ $(".layer .close").click(function(e){
 });
 });
 
-document.getElementById("send").addEventListener('click',function(){
-    alert("")
-})
 

@@ -5,7 +5,7 @@ var infowindow = new kakao.maps.InfoWindow({zindex:1});
 var container = document.getElementById('map');
 var options = {
     center: new kakao.maps.LatLng(37.402249,126.922267),
-    level: 10
+    level: 5
 };
 
 var map = new kakao.maps.Map(container, options);
@@ -22,7 +22,7 @@ if (navigator.geolocation) {
             lon = position.coords.longitude; // 경도
         
         var locPosition = new kakao.maps.LatLng(lat, lon), // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성합니다
-            message = '<div style="padding:5px;">여기에 계신가요?!</div>'; // 인포윈도우에 표시될 내용입니다
+            message = '<div style="padding:5px;text-align: center;">현 위치</div>'; // 인포윈도우에 표시될 내용입니다
         
         // 마커와 인포윈도우를 표시합니다
         displayMarker(locPosition, message);
@@ -32,7 +32,7 @@ if (navigator.geolocation) {
 } else { // HTML5의 GeoLocation을 사용할 수 없을때 마커 표시 위치와 인포윈도우 내용을 설정합니다
     
     var locPosition = new kakao.maps.LatLng(33.450701, 126.570667),    
-        message = 'geolocation을 사용할수 없어요..'
+        message = '현 위치를 찾을 수 없습니다.'
         
     displayMarker(locPosition, message);
 }
@@ -106,7 +106,7 @@ function displayMarker(place) {
     // 마커에 클릭이벤트를 등록합니다
     kakao.maps.event.addListener(marker, 'click', function() {
         // 마커를 클릭하면 장소명이 인포윈도우에 표출됩니다
-        infowindow.setContent('<div style="padding:5px;font-size:12px;">' + place.place_name + '</div>');
+        infowindow.setContent('<div style="padding:5px;font-size:12px;">' + place.place_name + '</div>' + '<div class="mark">' + '<a href="https://map.kakao.com/link/to/안양역,37.3990637,126.9218802" target="_blank">' + '<button>'+ '길찾기' + '</button>' + '</a>' + '</div>');
         infowindow.open(map, marker);
     });
 }
@@ -148,14 +148,20 @@ function showValue(target) {
     
 }
 
-lat1 = 37.3990637;
-lat2 = 37.4016455;
-lon1 = 126.9218802;
+lat1 = 37.3990637;//안양역
+lon1 = 126.9218802;//안양역
+
+lat2 = 37.4016455;//빽다방
 lon2 = 126.9229027;
 
+lat3 = 37.3981249;
+lon3 = 126.922610;
 
-var dist = Math.sqrt(Math.pow((0-3),2) + Math.pow((4-0),2));
-console.log(dist);
+lat4 = 37.3997917;
+lon4 = 126.922563;
+
+lat5 = 37.3846898;
+lon5 = 126.908860;
 
 function getDistance(lat1, lon1, lat2, lon2){
     if((lat1 == lat2) && (lon1 == lon2)){
@@ -179,16 +185,17 @@ function getDistance(lat1, lon1, lat2, lon2){
 
     return dist;
 }
+const on = document.getElementsByClassName("on");
+const dist = document.getElementsByClassName("distance");
 
-var dd = getDistance(lat1,lon1,lat2,lon2);
-console.log(dd +"m");
+const dist1 = getDistance(lat1,lon1,lat2,lon2);
+dist[0].innerHTML = dist1 + "m";
 
-var paik_dist = document.getElementById("distance");
-paik_dist.innerHTML = dd+"m";
+const dist2 = getDistance(lat1,lon1,lat3,lon3);
+dist[1].innerHTML = dist2 + "m";
 
+const dist3 = getDistance(lat1,lon1,lat4,lon4);
+dist[2].innerHTML = dist3 + "m";
 
-
-
-
-
-
+const dist4 = getDistance(lat1,lon1,lat5,lon5);
+dist[3].innerHTML = dist4 + "m";

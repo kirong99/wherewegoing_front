@@ -225,7 +225,7 @@ body{
     margin-bottom: 0;
     bottom: 0;
 }
-.course-select-box ul li .data p.location span#distance{
+.course-select-box ul li .data p.location span.distance{
     font-size: 20px;
     font-weight: bold;
     color: #000000;
@@ -280,4 +280,25 @@ footer p{
     position: absolute;
     left: 844px;
     bottom: 47px;
+}
+
+.road{
+    display: block;
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+.road button{
+    width: 150px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #fff;
+    border: 2px solid #6167B2;
+    padding: 1px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+.road button:hover{
+    background-color: #787fbf;
+    color:#fff;
 }
