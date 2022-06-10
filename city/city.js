@@ -98,6 +98,30 @@ if(start3 == every){
     place[3].innerHTML = go;
 }
 
+var selectTab = document.getElementById("select");
+
+var con = document.getElementsByClassName("course-select-box");
+
+selectTab.addEventListener("change",function(){
+    var val = selectTab.options[selectTab.selectedIndex].value;
+    for(var i = 0; i<selectTab.length-1;i++){
+        if(val == i){
+            con[i].style.display = "block";
+        } else if( val == "choice"){
+            con[0].style.display = "block";
+            document.getElementById("tab-1").selected = true;
+        }else if(val == "0"){
+            con[1].style.display = "none";
+            con[0].style.display = "block";
+        }
+         else if( val == "1"){
+            con[0].style.display = "none";
+            con[1].style.display = "block";
+        }
+    }
+    
+})
+
 
 
 

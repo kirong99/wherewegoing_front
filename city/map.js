@@ -125,7 +125,7 @@ marker.setMap(map);
 var value;
 function showValue(target) {
     value = target.value;
-    if(value=="manan"){
+    if(value=="0"){
         var container = document.getElementById('map');
         var options = {
         center: new kakao.maps.LatLng(37.3936,126.9218),
@@ -134,7 +134,7 @@ function showValue(target) {
 
     var map = new kakao.maps.Map(container, options);
 
-    } else if(value=="dongan"){
+    } else if(value=="1"){
         var container = document.getElementById('map');
     var options = {
         center: new kakao.maps.LatLng(37.3897,126.9676),
@@ -187,6 +187,7 @@ function getDistance(lat1, lon1, lat2, lon2){
 }
 const on = document.getElementsByClassName("on");
 const dist = document.getElementsByClassName("distance");
+const name1 = document.getElementsByClassName("name");
 
 const dist1 = getDistance(lat1,lon1,lat2,lon2);
 dist[0].innerHTML = dist1 + "m";
@@ -199,3 +200,5 @@ dist[2].innerHTML = dist3 + "m";
 
 const dist4 = getDistance(lat1,lon1,lat5,lon5);
 dist[3].innerHTML = dist4 + "m";
+
+console.log(dist);

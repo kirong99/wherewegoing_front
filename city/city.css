@@ -102,6 +102,10 @@ body{
     margin-top: 30px;
     border: 2px solid #6167B2;
     position: relative;
+    display: none;
+}
+.con1{
+    display: block;
 }
 .course-select-box>.line{
     width:100%;

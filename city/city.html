@@ -51,10 +51,10 @@
                 </select>
             </div>
             <div class="select-box">
-                <select onchange="showValue(this)" name='area' class='area-select' >
+                <select onchange="showValue(this)" name='area' class='area-select' id="select" >
                     <option value="choice"disabled selected>구 선택</option>
-                    <option value="manan">만안구</option>
-                    <option value="dongan">동안구</option>
+                    <option value="0" class="on" id="tab-1">만안구</option>
+                    <option value="1" id="tab-2">동안구</option>
                 </select>
             </div>
         </div>
@@ -65,7 +65,7 @@
         </div>
         <div id="map"></div>
         <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ab5085bead1c5ce2e87ca47583083577&libraries=services"></script>
-        <div class="course-select-box">
+        <div class="course-select-box con1">
             <div class="line"></div>
             <h3 class="on">전체</h3>
             <div class="check">
@@ -76,11 +76,11 @@
                 </select>
             </div>
             <ul class="course-all on">
-                <li><a href="../placepost/placepost.html">
+                <li class="test"><a href="../placepost/placepost.html">
                     <img class="all_img" src="../img/place/paik'scoffee.jpg" alt="빽다방">
                     <div class="data" id="data">
                         <p class="state" id="state">영업 중</p>
-                        <h4>빽다방 안양역점</h4>
+                        <h4 class="name">빽다방 안양역점</h4>
                         <p><span>영업시간</span>매일 <span class="time">08:00~22:00</span><span class="notice">(아이스크림 마감:21시)</span></p>
                         <p><span>전화번호</span>031-466-6260</p>
                         <p><span>위치</span>경기 안양시 만안구 만안로 224</p>
@@ -141,7 +141,7 @@
                         <p><span>영업시간</span>화~일 <span class="time">11:30~22:00</span><span class="notice">(브레이크타임:15:00~17:00(평일) 15:30~16:30(주말 및 공휴일), 라스트오더:21:30, 월요일 정기휴무)</span></p>
                         <p><span>전화번호</span>031-442-1235</p>
                         <p><span>위치</span>경기 안양시 만안구 태평로52번길 21 마드리드상가205호</p>
-                        <p class="location">안양역에서 300m</p>
+                        <p class="location">안양역에서 <span class="distance">300m</span></p>
                     </div>
                 </a></li>
                 <li><a href="#">
@@ -406,6 +406,340 @@
                         <p><span>전화번호</span>031-389-5287</p>
                         <p><span>위치</span>경기 안양시 만안구 안양로 595</p>
                         <p class="location">안양역에서 552m</p>
+                    </div>
+                </a></li>
+            </ul>
+        </div>
+        <div class="course-select-box con2">
+            <div class="line"></div>
+            <h3>전체</h3>
+            <div class="check">
+                <select name='choice' class='choice'>
+                    <option value="distance">거리순</option>
+                    <option value="popular">조회순</option>
+                    <option value="review">리뷰순</option>
+                </select>
+            </div>
+            <ul class="course-all on">
+                <li class="test"><a href="../placepost/placepost.html">
+                    <img class="all_img" src="../img/place/marble.jpg" alt="마블넘버나인">
+                    <div class="data" id="data">
+                        <p class="state" id="state">영업 중</p>
+                        <h4 class="name">마블넘버나인</h4>
+                        <p><span>영업시간</span>매일 <span class="time">15:00~21:30</span></p>
+                        <p><span>전화번호</span>031-386-9282</p>
+                        <p><span>위치</span>경기 안양시 동안구 귀인로 190번길 61-11</p>
+                        <p class="location">안양역에서 <span class="distance">104m</span></p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <img class="all_img" src="../img/place/diani.jpg" alt="디아니커피">
+                    <div class="data" id="data">
+                        <p class="state" id="state">영업 중</p>
+                        <h4>디아니커피</h4>
+                        <p><span>영업시간</span>매일 <span class="time">12:00~22:00</span><span class="notice">(라스트오더:21시 30분)</span></p>
+                        <p><span>전화번호</span>031-385-0015</p>
+                        <p><span>위치</span>경기 안양시 동안구 시민대로 202 308호</p>
+                        <p class="location">안양역에서 <span class="distance">104m</span></p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <img class="all_img" src="../img/place/yokko.jpg" alt="이자카야요꼬">
+                    <div class="data" id="data">
+                        <p class="state" id="state">영업 중</p>
+                        <h4>이자카야 요꼬</h4>
+                        <p><span>영업시간</span>매일 <span class="time">17:00~03:00</span></p>
+                        <p><span>전화번호</span>031-382-1436</p>
+                        <p><span>위치</span>경기 안양시 동안구 평촌대로223번길 11 성우프라자</p>
+                        <p class="location">안양역에서 <span class="distance">104m</span></p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <img class="all_img" src="../img/place/centerpark.jpg" alt="평촌중앙공원">
+                    <div class="data" id="data">
+                        <p class="state" id="state">영업 중</p>
+                        <h4>평촌중앙공원</h4>
+                        <p><span>영업시간</span><span class="time">매일</span></p>
+                        <p><span>전화번호</span>031-8045-2810</p>
+                        <p><span>위치</span>경기 안양시 동안구 관평로 149</p>
+                        <p class="location">안양역에서 <span class="distance">300m</span></p>
+                    </div>
+                </a></li>
+            </ul>
+            <h3>식당</h3>
+            <div class="check">
+                <!-- <label class="open" htmlFor="open">   
+                    <input type="checkbox" id="open"/>
+                    <p>영업 중</p>만 확인
+                </label> -->
+                <select name='choice' class='choice'>
+                    <option value="distance">거리순</option>
+                    <option value="popular">인기순</option>
+                    <option value="review">리뷰순</option>
+                </select>
+            </div>
+            <ul>
+                <li><a href="#">
+                    <img class="all_img" src="../img/place/dangsan.jpg" alt="당산오돌인덕원점">
+                    <div class="data" id="data">
+                        <p class="state" id="state">영업 중</p>
+                        <h4>당산오돌 인덕원점</h4>
+                        <p><span>영업시간</span>매일 <span class="time">12:00~23:50</span></p>
+                        <p><span>전화번호</span>031-443-0981</p>
+                        <p><span>위치</span>경기 안양시 동안구 인덕원로 31</p>
+                        <p class="location">안양역에서 <span class="distance">300m</span></p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <img class="all_img" src="../img/place/marble.jpg" alt="마블넘버나인">
+                    <div class="data" id="data">
+                        <p class="state" id="state">영업 중</p>
+                        <h4>마블넘버나인</h4>
+                        <p><span>영업시간</span>매일 <span class="time">15:00~21:30</span></p>
+                        <p><span>전화번호</span>031-386-9282</p>
+                        <p><span>위치</span>경기 안양시 동안구 귀인로 190번길 61-11</p>
+                        <p class="location">안양역에서 104m</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <img class="all_img" src="../img/place/crab.jpg" alt="크래버대게나라안양점">
+                    <div class="data" id="data">
+                        <p class="state" id="state">영업 중</p>
+                        <h4>크래버대게나라 안양점</h4>
+                        <p><span>영업시간</span>매일 <span class="time">11:30~22:30</span> 토~일 <span class="time">11:30~16:00 런체메뉴, 런치정식 ,점심특선(공휴일제외)</span></p>
+                        <p><span>전화번호</span>031-383-1116</p>
+                        <p><span>위치</span>경기 안양시 동안구 관평로 186</p>
+                        <p class="location">안양역에서 608m</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <img class="all_img" src="../img/place/macho.jpg" alt="마초쉐프범계점">
+                    <div class="data" id="data">
+                        <p class="state" id="state">영업 중</p>
+                        <h4>마초쉐프 범계점</h4>
+                        <p><span>영업시간</span>매일 <span class="time">15:00~17:00 브레이크타임, 14:00, 21:00 라스트오더</span></p>
+                        <p><span>전화번호</span>031-388-8877</p>
+                        <p><span>위치</span>경기 안양시 동안구 평촌대로223번길 16</p>
+                        <p class="location">안양역에서 300m</p>
+                    </div>
+                </a></li>
+            </ul>
+            <h3>카페</h3>
+            <div class="check">
+                <!-- <label class="open" htmlFor="open">   
+                    <input type="checkbox" id="open"/>
+                    <p>영업 중</p>만 확인
+                </label> -->
+                <select name='choice' class='choice'>
+                    <option value="distance">거리순</option>
+                    <option value="popular">인기순</option>
+                    <option value="review">리뷰순</option>
+                </select>
+            </div>
+            <ul>
+                <li><a href="#">
+                    <img class="all_img" src="../img/place/diani.jpg" alt="디아니커피">
+                    <div class="data" id="data">
+                        <p class="state" id="state">영업 중</p>
+                        <h4>디아니커피</h4>
+                        <p><span>영업시간</span>매일 <span class="time">12:00~22:00</span><span class="notice">(라스트오더:21시 30분)</span></p>
+                        <p><span>전화번호</span>031-385-0015</p>
+                        <p><span>위치</span>경기 안양시 동안구 시민대로 202 308호</p>
+                        <p class="location">안양역에서 40m</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <img class="all_img" src="../img/place/dish.jpg" alt="카페디쉬">
+                    <div class="data" id="data">
+                        <p class="state" id="state">영업 중</p>
+                        <h4>카페디쉬</h4>
+                        <p><span>영업시간</span>매일 <span class="time">12:00~23:00</span></p>
+                        <p><span>전화번호</span>010-9201-6979</p>
+                        <p><span>위치</span>경기 안양시 동안구 평촌대로217번길 27 백두프라자</p>
+                        <p class="location">안양역에서 104m</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <img class="all_img" src="../img/place/atall.jpg" alt="카페아톨">
+                    <div class="data" id="data">
+                        <p class="state" id="state">영업 중</p>
+                        <h4>카페 아톨</h4>
+                        <p><span>영업시간</span>매일 <span class="time">10:00~20:00</span><span class=notice>15:00~17:00 브레이크타임, 18:30 라스트오더, 수요일 정기휴무</span></p>
+                        <p><span>전화번호</span>031-423-7369</p>
+                        <p><span>위치</span>경기 안양시 동안구 동편로183번길 86 1층</p>
+                        <p class="location">안양역에서 40m</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <img class="all_img" src="../img/place/whisk.jpg" alt="위스크">
+                    <div class="data" id="data">
+                        <p class="state" id="state">영업 중</p>
+                        <h4>위스크</h4>
+                        <p><span>영업시간</span>매일 <span class="time">08:00~22:00</span><span class="notice">월요일 정기휴무</span></p>
+                        <p><span>전화번호</span>031-424-5698</p>
+                        <p><span>위치</span>경기 안양시 동안구 시민대로327번길 12-6</p>
+                        <p class="location">안양역에서 40m</p>
+                    </div>
+                </a></li>
+            </ul>
+            <h3>놀거리</h3>
+            <div class="check">
+                <!-- <label class="open" htmlFor="open">   
+                    <input type="checkbox" id="open"/>
+                    <p>영업 중</p>만 확인
+                </label> -->
+                <select name='choice' class='choice'>
+                    <option value="distance">거리순</option>
+                    <option value="popular">인기순</option>
+                    <option value="review">리뷰순</option>
+                </select>
+            </div>
+            <ul>
+                <li><a href="#">
+                    <img class="all_img" src="../img/place/redbutton_bumgye.jpg" alt="보드게임카페레드버튼범계점">
+                    <div class="data" id="data">
+                        <p class="state" id="state">영업 중</p>
+                        <h4>보드게임카페 레드버튼 범계점</h4>
+                        <p><span>영업시간</span>매일 <span class="time">13:00~02:00</span></p>
+                        <p><span>전화번호</span>031-388-3799</p>
+                        <p><span>위치</span>경기 안양시 동안구 평촌대로223번길 52 502호</p>
+                        <p class="location">안양역에서 186m</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <img class="all_img" src="../img/place/nabi.jpg" alt="나비잠방탈출카페">
+                    <div class="data" id="data">
+                        <p class="state" id="state">영업 중</p>
+                        <h4>나비잠 방탈출카페</h4>
+                        <p><span>영업시간</span>매일 <span class="time">12:00~23:00</span></p>
+                        <p><span>전화번호</span>031-386-0211</p>
+                        <p><span>위치</span>경기 안양시 동안구 평촌대로223번길 28 에이스프라자 5층 나비잠</p>
+                        <p class="location">안양역에서 104m</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <img class="all_img" src="../img/place/darak.jpg" alt="3층다락방카페">
+                    <div class="data" id="data">
+                        <p class="state" id="state">영업 중</p>
+                        <h4>3층다락방 카페</h4>
+                        <p><span>영업시간</span>매일 <span class="time">13:00~23:00</span></p>
+                        <p><span>전화번호</span>070-4354-4580</p>
+                        <p><span>위치</span>경기 안양시 동안구 평촌대로223번길 59 서련코아 3층 305호</p>
+                        <p class="location">안양역에서 207m</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <img class="all_img" src="../img/place/bultoon.jpg" alt="벌툰범계역점">
+                    <div class="data" id="data">
+                        <p class="state" id="state">영업 중</p>
+                        <h4>벌툰 범계역점</h4>
+                        <p><span>영업시간</span>매일 <span class="time">10:00~24:00</span></p>
+                        <p><span>전화번호</span>031-381-5908</p>
+                        <p><span>위치</span>경기 안양시 동안구 평촌대로223번길 11 4층 401~402호</p>
+                        <p class="location">안양역에서 207m</p>
+                    </div>
+                </a></li>
+            </ul>
+            <h3>술집</h3>
+            <div class="check">
+                <!-- <label class="open" htmlFor="open">   
+                    <input type="checkbox" id="open"/>
+                    <p>영업 중</p>만 확인
+                </label> -->
+                <select name='choice' class='choice'>
+                    <option value="distance">거리순</option>
+                    <option value="popular">인기순</option>
+                    <option value="review">리뷰순</option>
+                </select>
+            </div>
+            <ul>
+                <li><a href="#">
+                    <img class="all_img" src="../img/place/yokko.jpg" alt="이자카야요꼬">
+                    <div class="data" id="data">
+                        <p class="state" id="state">영업 중</p>
+                        <h4>이자카야 요꼬</h4>
+                        <p><span>영업시간</span>매일 <span class="time">17:00~03:00</span></p>
+                        <p><span>전화번호</span>031-382-1436</p>
+                        <p><span>위치</span>경기 안양시 동안구 평촌대로223번길 11 성우프라자</p>
+                        <p class="location">안양역에서 429m</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <img class="all_img" src="../img/place/yeokjun.jpg alt="역전할머니맥주범계점">
+                    <div class="data" id="data">
+                        <p class="state" id="state">영업 중</p>
+                        <h4>역전할머니맥주 범계점</h4>
+                        <p><span>영업시간</span>매일 <span class="time">17:00~02:00</span></p>
+                        <p><span>전화번호</span>031-387-7575</p>
+                        <p><span>위치</span>경기 안양시 동안구 평촌대로217번길 15 1,2층</p>
+                        <p class="location">안양역에서 444m</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <img class="all_img" src="../img/place/dongkyung.jpg" alt="동경에서온주방장">
+                    <div class="data" id="data">
+                        <p class="state" id="state">영업 중</p>
+                        <h4>동경에서온주방장</h4>
+                        <p><span>영업시간</span>매일 <span class="time">16:00~01:00</span> 금~토 <span class="time">18:00~04:00</span><span class="notice">새벽 00:00 라스트 오더</span></p>
+                        <p><span>전화번호</span>010-9011-3558</p>
+                        <p><span>위치</span>경기 안양시 동안구 인덕원로8번길 13</p>
+                        <p class="location">안양역에서 376m</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <img class="all_img" src="../img/place/sowoomi.jpg" alt="소우미">
+                    <div class="data" id="data">
+                        <p class="state" id="state">영업 중</p>
+                        <h4>소우미</h4>
+                        <p><span>영업시간</span>일~목 <span class="time">17:00~24:00</span> 금~토 <span class="time">16:00~04:00</span><span class="notice">일요일 정기휴무</span></p>
+                        <p><span>전화번호</span>031-422-9090</p>
+                        <p><span>위치</span>경기 안양시 동안구 동편로183번길 47 1층 소우미</p>
+                        <p class="location">안양역에서 472m</p>
+                    </div>
+                </a></li>
+            </ul>
+            <h3>산책</h3>
+            <div class="check">
+                <!-- <label class="open" htmlFor="open">   
+                    <input type="checkbox" id="open"/>
+                    <p>영업 중</p>만 확인
+                </label> -->
+                <select name='choice' class='choice'>
+                    <option value="distance">거리순</option>
+                    <option value="popular">인기순</option>
+                    <option value="review">리뷰순</option>
+                </select>
+            </div>
+            <ul>
+                <li><a href="#">
+                    <img class="all_img" src="../img/place/centerpark.jpg" alt="평촌중앙공원">
+                    <div class="data" id="data">
+                        <p class="state" id="state">영업 중</p>
+                        <h4>평촌중앙공원</h4>
+                        <p><span>영업시간</span><span class="time">매일</span></p>
+                        <p><span>전화번호</span>031-8045-2810</p>
+                        <p><span>위치</span>경기 안양시 동안구 관평로 149</p>
+                        <p class="location">안양역에서 300m</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <img class="all_img" src="../img/place/hakwoon.jpg" alt="학운공원">
+                    <div class="data" id="data">
+                        <p class="state" id="state">영업 중</p>
+                        <h4>학운공원</h4>
+                        <p><span>영업시간</span><span class="time">매일</span></p>
+                        <p><span>위치</span>경기 안양시 동안구 학의로 71</p>
+                        <p class="location">안양역에서 472m</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <img class="all_img" src="../img/place/gwanak.jpg" alt="관악산산림욕장">
+                    <div class="data" id="data">
+                        <p class="state" id="state">영업 중</p>
+                        <h4>관악산산림욕장</h4>
+                        <p><span>영업시간</span><span class="time">매일</span></p>
+                        <p><span>위치</span>경기 안양시 동안구 평촌대로476번길 30-2</p>
+                        <p class="location">안양역에서 980m</p>
                     </div>
                 </a></li>
             </ul>
