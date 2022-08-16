@@ -68,11 +68,11 @@ ul{list-style: none;}
 
 
 /* footer */
-footer{width: 100%;height: 172px;background-color: #C7C7C7;position: relative;margin-top: 130px;}
+/* footer{width: 100%;height: 172px;background-color: #C7C7C7;position: relative;margin-top: 130px;}
 footer h1{position: absolute;left: 594px;top: 56px;}
 footer nav .fo_menu{position: absolute;top: 47px;left: 844px}
 footer nav .fo_menu li{float: left;margin-right: 20px;font-size: 20px;color: #707070;}
-footer p{color: #707070;font-size: 16px;position: absolute;left: 844px;bottom: 47px}
+footer p{color: #707070;font-size: 16px;position: absolute;left: 844px;bottom: 47px} */
 
 .layer{display: none;width: 1260px;height: 830px;background-color: #fff;border: 2px solid #000;position: absolute;left: 50%;top: 50%;margin-left: -630px;margin-top: -410px;z-index: 1000;}
 .layer h2{color: #000;padding: 20px;text-align: center;position: relative;top: 65px;height: 100px;font-size: 25px;}
@@ -91,3 +91,34 @@ footer p{color: #707070;font-size: 16px;position: absolute;left: 844px;bottom: 4
 .layer .list ul li p{width: 650px;margin: 10px;float: left;}
 .layer .list ul li p span{margin-right: 15px;}
 
+
+/* 대중화된 모바일 세로 */
+@media (max-width: 575px){
+    .title{width: 100%;font-size: 10px;margin-left: 10px;}
+    .intro{width: 100%;}
+    .intro ul{left: 20px;}
+    .intro ul li{font-size: 15px;}
+    .intro ul li:nth-of-type(1){margin-right: 40px;}
+    .intro ul li:nth-of-type(1) p:nth-of-type(1) span{font-size: 18px;}
+    .intro ul li button{width: 100px;height: 30px;font-size: 10px;top: 14px;}
+    .subMenu{width: 100%;margin-top: 30px;}
+}
+
+/* 대중화된 모바일 가로 */
+@media (max-width: 576px) and (max-width:767px){
+
+}
+
+/* 대중화된 태블릿 */
+@media (min-width: 768px) and (max-width:991px){
+
+}
+
+/* 낮은 해상도의 DESKTOP */
+@media (min-width: 992px) and (max-width:1199px){
+
+}
+
+@media (min-width: 1200px){
+
+}

@@ -1,9 +1,159 @@
-*{margin: 0; padding: 0; list-style: none; box-sizing: border-box;font-family: 'Noto Sans KR', sans-serif;}
-a{text-decoration: none;color:black}
-ul{list-style: none;}
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+footer{
+    width: 100%;
+    height: 172px;
+    background-color: #C7C7C7;
+    position: relative;
+    margin-top: 130px;
+}
+footer h1{
+    position: absolute;
+    left: 594px;
+    top: 56px;
+}
+footer nav .fo_menu{
+    position: absolute;
+    top: 47px;
+    left: 844px;
+    
+}
+footer nav .fo_menu li{
+    float: left;
+    margin-right: 20px;
+    font-size: 20px;
+    color: #707070;
+}
+footer p{
+    color: #707070;
+    font-size: 16px;
+    position: absolute;
+    left: 844px;
+    bottom: 47px;
+}
+footer{
+    width: 100%;
+    height: 172px;
+    background-color: #C7C7C7;
+    position: relative;
+    margin-top: 130px;
+}
 
-footer{width: 100%;height: 172px;background-color: #C7C7C7;position: relative;margin-top: 130px;}
-footer h1{position: absolute;left: 594px;top: 56px;}
-footer nav .fo_menu{position: absolute;top: 47px;left: 844px}
-footer nav .fo_menu li{float: left;margin-right: 20px;font-size: 20px;color: #707070;}
-footer p{color: #707070;font-size: 16px;position: absolute;left: 844px;bottom: 47px}
+footer .fo_mar{width: 784px; height: 70px; margin: 0 auto; padding-top: 57px;}
+footer .fo_mar h1{width: 180px; height: 60px; float: left; margin-right: 100px;}
+footer .fo_mar h1 img{width:100%; height: 100%;}
+footer .fo_mar nav{height: 30px; width: 504px; float: left;}
+footer .fo_mar nav .fo_menu li{float: left; margin-right: 20px; font-size: 20px; color: #707070;}
+footer .fo_mar p{color: #707070; font-size: 16px; width: 267px; height: 23px; margin-top: 10px; float: left;}
+
+@media (min-width:980px) and (max-width:1179.9px){
+    footer {height: 130px;}
+    footer .fo_mar{width: 583px; height: 53px; padding-top: 45px;}
+    footer .fo_mar h1{width: 163px; height: 53px; margin-right: 42px;}
+    footer .fo_mar nav{width: 378px;}
+    footer .fo_mar nav .fo_menu li{margin-right: 15px; font-size: 15px;}
+    footer .fo_mar p{font-size: 12px; margin-top: 0px;}
+}
+
+@media (min-width:700px) and (max-width:979.9px){
+    footer {height: 130px;}
+    footer .fo_mar{width: 583px; height: 53px; padding-top: 45px;}
+    footer .fo_mar h1{width: 143px; height: 47px; margin-right: 42px;}
+    footer .fo_mar nav{width: 378px;}
+    footer .fo_mar nav .fo_menu li{margin-right: 15px; font-size: 12px;}
+    footer .fo_mar p{font-size: 10px; margin-top: 0px;}
+}
+
+@media (min-width:650px) and (max-width:699.9px){
+    footer {height: 130px; margin-top: 110px;}
+    footer .fo_mar{width: 583px; height: 53px; padding-top: 45px;}
+    footer .fo_mar h1{width: 130px; height: 40px; margin-right: 42px;}
+    footer .fo_mar nav{width: 378px;}
+    footer .fo_mar nav .fo_menu li{margin-right: 15px; font-size: 10px;}
+    footer .fo_mar p{font-size: 10px; margin-top: 0px;}
+}
+
+@media (min-width:600px) and (max-width:649.9px){
+    footer {height: 130px; margin-top: 110px;}
+    footer .fo_mar{width: 444px; height: 53px; padding-top: 45px;}
+    footer .fo_mar h1{width: 130px; height: 40px; margin-right: 42px;}
+    footer .fo_mar nav{width: 272px;}
+    footer .fo_mar nav .fo_menu li{margin-right: 15px; font-size: 10px;}
+    footer .fo_mar p{font-size: 10px; margin-top: 0px; width: 267px;}
+}
+
+@media (min-width:550px) and (max-width:599.9px){
+    footer {height: 130px; margin-top: 70px;}
+    footer .fo_mar{width: 444px; height: 53px; padding-top: 45px;}
+    footer .fo_mar h1{width: 130px; height: 40px; margin-right: 42px;}
+    footer .fo_mar nav{width: 272px;}
+    footer .fo_mar nav .fo_menu li{margin-right: 15px; font-size: 10px;}
+    footer .fo_mar p{font-size: 10px; margin-top: 0px; width: 267px;}
+}
+
+@media (min-width:500px) and (max-width:549.9px){
+    footer {height: 130px; margin-top: 70px;}
+    footer .fo_mar{width: 444px; height: 53px; padding-top: 45px;}
+    footer .fo_mar h1{width: 130px; height: 40px; margin-right: 42px;}
+    footer .fo_mar nav{width: 272px;}
+    footer .fo_mar nav .fo_menu li{margin-right: 15px; font-size: 10px;}
+    footer .fo_mar p{font-size: 10px; margin-top: 0px; width: 267px;}
+}
+
+@media (min-width:450px) and (max-width:499.9px){
+    footer {height: 115px; margin-top: 70px;}
+    footer .fo_mar{width: 392px; height: 53px; padding-top: 40px;}
+    footer .fo_mar h1{width: 100px; height: 35px; margin-right: 20px;}
+    footer .fo_mar nav{width: 272px;}
+    footer .fo_mar nav .fo_menu li{margin-right: 15px; font-size: 10px;}
+    footer .fo_mar p{font-size: 10px; margin-top: 0px; width: 267px;}
+}
+
+@media (min-width:400px) and (max-width:449.9px){
+    footer {height: 115px; margin-top: 70px;}
+    footer .fo_mar{width: 392px; height: 53px; padding-top: 40px;}
+    footer .fo_mar h1{width: 100px; height: 35px; margin-right: 20px;}
+    footer .fo_mar nav{width: 272px;}
+    footer .fo_mar nav .fo_menu li{margin-right: 15px; font-size: 10px;}
+    footer .fo_mar p{font-size: 10px; margin-top: 0px; width: 267px;}
+}
+
+@media (min-width:350px) and (max-width:399.9px){
+    footer {height: 115px; margin-top: 40px;}
+    footer .fo_mar{width: 346px; height: 53px; padding-top: 40px;}
+    footer .fo_mar h1{width: 100px; height: 35px; margin-right: 10px;}
+    footer .fo_mar nav{width: 236px;}
+    footer .fo_mar nav .fo_menu li{margin-right: 6px; font-size: 10px;}
+    footer .fo_mar p{font-size: 10px; margin-top: 0px; width: 192px;}
+}
+
+@media (min-width:300px) and (max-width:349.9px){
+    footer {height: 115px; margin-top: 40px;}
+    footer .fo_mar{width: 259px; height: 77px; padding-top: 16px;}
+    footer .fo_mar h1{width: 87px; height: 32px; margin-right: 0px;}
+    footer .fo_mar nav{width: 256px; margin-top: 14px; height: 18px;}
+    footer .fo_mar nav .fo_menu li{margin-right: 11px; font-size: 10px;}
+    footer .fo_mar p{font-size: 10px; margin-top: 6px; width: 192px;}
+}
+
+@media (max-width:299.9px){
+    footer {height: 115px; margin-top: 40px;}
+    footer .fo_mar{width: 225px; height: 77px; padding-top: 16px;}
+    footer .fo_mar h1{width: 87px; height: 32px; margin-right: 0px;}
+    footer .fo_mar nav{width: 228px; margin-top: 14px; height: 18px;}
+    footer .fo_mar nav .fo_menu li{margin-right: 4px; font-size: 10px;}
+    footer .fo_mar p{font-size: 10px; margin-top: 6px; width: 192px;}
+}
+

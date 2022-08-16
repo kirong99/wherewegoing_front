@@ -3,8 +3,9 @@ ul{list-style: none;}
 a{color: inherit;text-decoration: none;}
 body{font-family: 'Noto Sans KR', sans-serif;}
 
-header{width: 100%;height: 180px;position: relative}
-header h1{width: 100%;height: 100px;text-align: center;}
+header{width: 100%;height: 180px;z-index: 10;position: relative}
+header h1{width: 280px;height: 90px;text-align: center;margin: 0 auto;}
+header h1 img{width: 100%;height: 100%;}
 .new{width: 6px; height: 6px; border-radius: 50px; background: red;position: absolute; top: 34px; left: 717px;}
 .alert_ico{position: absolute; top: 34px; left: 687px;}
 .alert{width: 336px; height: 257px; background-color: #fff;z-index: 100;position: absolute;top: 73px;left: 671px; display: none;}
@@ -14,7 +15,7 @@ header h1{width: 100%;height: 100px;text-align: center;}
 .alert .al h3{font-size: 11px; float: left;margin: 10px 0;}
 .alert .al p{font-size: 10px; color: #707070;width: 209px;height: 34px;float: left;text-align: left;overflow: hidden; word-wrap:break-word; text-overflow: ellipsis; word-break:break-all; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;}
 .alert .al img{position: absolute;top: 37px; right: 12px; width: 10px; height: 10px; cursor: pointer;}
-header .lo_jo{width: 400px;height: 30px;position: absolute;right: 360px;top: 40px}
+header .lo_jo{width: 210px;height: 30px;position: absolute;right: 15%;top: 40px}
 header .lo_jo li{font-size: 16px;float: left;color: #707070;margin-right: 10px;}
 header .lo_jo li:nth-child(3){margin-right: 0;}
 header .lo_jo li a{width: 100%;height: 100%;display: block;}
@@ -23,3 +24,45 @@ header nav .gnb{text-align: center;padding-top: 28px;margin-left: 34%}
 header nav .gnb>li{width: 100px;float: left;height: 50px;font-size: 16px;box-sizing: border-box;text-align: center;margin-right: 30px;}
 header nav .gnb>li:hover>a{border-bottom: 4px solid #6167B2;}
 header nav .gnb>li>a{width: 100%;height: 100%;display: block;}
+
+/* 대중화된 모바일 세로 */
+@media (max-width: 575px){
+    header{height: 100px;margin: 0;}
+    header h1{width: 165px;height: 51px; margin: 10px auto;}/* 로고 */
+    header .lo_jo {width: 100px;height: 15px;top:10px;right: 8%;}
+    header .lo_jo li{font-size: 10px;float: none;}
+    header .lo_jo li:nth-of-type(2){font-size: 10px;}
+    header nav{height: 50px;}
+    header nav .gnb{width: 100%;padding: 0;margin-left: 10%;}
+    header nav .gnb>li{font-size: 10px; line-height: 50px; width: 55px; height: 50px;}
+    header nav .gnb>li>a{height: 50px;}
+}
+
+/* 대중화된 모바일 가로 */
+@media (max-width: 576px) and (max-width:767px){
+    /* header{height: 119px;}
+    header h1{width: 165px; height: 51px; margin: 16px auto;}
+    header .lo_jo {width: 88px;height: 15px; right: 3%;}
+    header .lo_jo li{font-size: 10px;}
+    header nav{height: 50px;}
+    header nav .gnb{width:100%;}
+    header nav .gnb>li{font-size: 10px; line-height: 50px; width: 55px; height: 50px;}
+    header nav .gnb>li>a{height: 46.984px;} */
+
+}
+
+/* 대중화된 태블릿 */
+@media (min-width: 768px) and (max-width:991px){
+
+}
+
+/* 낮은 해상도의 DESKTOP */
+@media (min-width: 992px) and (max-width:1199px){
+
+}
+
+@media (min-width: 1200px){
+
+}
+
+

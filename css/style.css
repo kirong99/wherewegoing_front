@@ -11,8 +11,81 @@ a{
 }
 body{
     font-family: 'Noto Sans KR', sans-serif;
+    width: 100%;
+    margin: 0 auto;
 }
 
+header{
+    width: 100%;
+    height: 172px;
+    z-index: 10;
+    position: relative;
+}
+header h1{
+    width: 280px;
+    height: 90px;
+    margin: 0 auto;
+}
+.logo_img{width:100%; height:100%;}
+header .lo_jo{
+    width: 130px;
+    height: 30px;
+    position: absolute;
+    right:10%;
+    top: 40px;
+}
+header .lo_jo li{
+    font-size: 16px;
+    float: left;
+    color: #707070;
+    margin-right: 10px;
+}
+header .lo_jo li:nth-child(3){
+    margin-right: 0;
+}
+header .lo_jo li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+header nav{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #B6B6B6;
+    border-top: 1px solid #B6B6B6;
+    background: #fff;
+}
+header nav .gnb{
+    text-align: center;
+    width: 620px;
+    height: 100%;
+    margin: 0 auto;
+}
+header nav .gnb>li{
+    line-height: 80px;
+    width: 100px;
+    float: left;
+    height: 80px;
+    font-size: 16px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: 30px;
+}
+header nav .gnb>li:nth-child(5){
+    margin: 0;
+}
+header nav .gnb>li:hover>a{
+    border-bottom: 4px solid #6167B2;
+}
+header nav .gnb>li.on>a{
+    border-bottom: 4px solid #6167B2;
+    font-weight: bold;
+}
+header nav .gnb>li>a{
+    width: 100%;
+    height: 75.984px;
+    display: block;
+}
 .contents{
     width: 100%;
 
@@ -22,7 +95,7 @@ body{
     height: 650px;
     position: relative;
 }
-.slide ul,.slide ul>a>li{
+.slide ul,.slide ul>li{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -30,7 +103,9 @@ body{
     left: 0;
 }
 .slide img{
-    width: 1895px;
+    width: 100%;
+    height: 100%;
+    max-height: 650px;
 }
 .container{
     margin: 0 auto;
@@ -47,35 +122,41 @@ body{
 .Top ul{
     margin-top: 40px;
 }
-.Top ul>a>li{
+.Top ul>li{
     width: 320px;
     height: 440px;
     border: 1px solid #707070;
     float: left;
 }
-.Top ul>a>li.box1,.Top ul>a>li.box2{
-    margin-right: 144px;
-}
-.Top ul>a>li>img{
+.Top ul>li div.top_box{
+    margin: 10px auto 20px;
     width: 300px;
     height: 300px;
-    margin: 10px;
 }
-.Top ul>a>li .icon{
-    margin: 0 10px;
+.Top ul>li.box1,.Top ul>li.box2{
+    margin-right: 142px;
 }
-.Top ul>a>li .icon img{
+.Top ul>li .top_box img{
+    width: 100%;
+    height: 100%;
+}
+.Top ul>li .icon{
+    margin: 0 auto;
+    width: 300px;
+}
+.Top ul>li .icon img{
     width: 20px;
     height: 20px;
     margin-right: 5px;
 }
-.Top ul>a>li .icon img:nth-child(4){
+.Top ul>li .icon img:nth-child(4){
     margin-right: 0;
     float: right;
 }
-.Top ul>a>li p{
+.Top ul>li p{
     font-size: 18px;
-    margin: 15px 10px;
+    margin: 15px auto;
+    width: 300px;
 }
 .recommend{
     margin-top: 150px;
@@ -106,6 +187,7 @@ body{
     float: left;
     position: relative;
 }
+.recommend ul li img{width:100%}
 .recommend ul li.course1{
     margin-right: 20px;
 }
@@ -133,34 +215,443 @@ body{
     top: 117px;
     right: 30px;
 }
-footer{
-    width: 100%;
-    height: 172px;
-    background-color: #C7C7C7;
-    position: relative;
-    margin-top: 130px;
+
+
+
+@media (min-width:1380px) and (max-width:1150.9px){
+    .slide{height: 540px;}
 }
-footer h1{
-    position: absolute;
-    left: 594px;
-    top: 56px;
+@media (min-width:1380px) and (max-width:1470.9px){
+    .Top ul>li.box1, .Top ul>li.box2{margin-right: 140px;}
 }
-footer nav .fo_menu{
-    position: absolute;
-    top: 47px;
-    left: 844px;
-    
+@media (min-width:1180px) and (max-width:1379.9px){
+    .slide{height: 500px;}
+    .container{width: 1096px;}
+    .Top ul>li.box1, .Top ul>li.box2{margin-right: 65px;}
+    .recommend ul li.course1{margin-right: 6px;}
+    .recommend ul li, .recommend ul li div {width: 545px;}
+    .Top,.recommend{margin-top: 100px;}
 }
-footer nav .fo_menu li{
-    float: left;
-    margin-right: 20px;
-    font-size: 20px;
-    color: #707070;
+@media (min-width:980px) and (max-width:1179.9px){
+    .slide{height: 340px;}
+    .container{width: 900px;}
+    .Top ul {overflow-x: scroll; width: 100%; flex-wrap: nowrap; display: flex; justify-content: start;}
+    .Top ul::-webkit-scrollbar{display: none;}
+    .Top ul>li{width: 33.3%; height: 370px;}
+    .Top ul>li div.top_box {margin: 15px auto 15px; width: 240px; height: 240px;}
+    .Top ul>li .icon{width: 240px;}
+    .Top ul>li p{font-size: 16px; width: 241px; margin: 10px auto;}
+    .Top ul>li.box1, .Top ul>li.box2{margin-right: 65px;}
+    .recommend ul li.course1{margin-right: 10px;}
+    .recommend ul li, .recommend ul li div{width: 445px; height: 257px;}
+    .recommend ul li h3{font-size: 23px;}
+    .recommend ul li p{font-size: 16px; top: 99px;}
+    .recommend{height: 328px;}
+    .Top,.recommend{margin-top: 100px;}
+    footer {height: 130px;}
+    footer .fo_mar{width: 583px; height: 53px; padding-top: 45px;}
+    footer .fo_mar h1{width: 163px; height: 53px; margin-right: 42px;}
+    footer .fo_mar nav{width: 378px;}
+    footer .fo_mar nav .fo_menu li{margin-right: 15px; font-size: 15px;}
+    footer .fo_mar p{font-size: 12px; margin-top: 0px;}
 }
-footer p{
-    color: #707070;
-    font-size: 16px;
-    position: absolute;
-    left: 844px;
-    bottom: 47px;
+
+
+@media (min-width:700px) and (max-width:979.9px){
+    header{height: 152px;}
+    header h1{width: 215px; height: 67px; margin: 23px auto;}
+    header .lo_jo li{font-size: 13px;}
+    header nav{height: 60px;}
+    header nav .gnb>li{font-size: 13px; line-height: 60px;}
+    header nav .gnb>li>a{height: 56.984px;}
+    .slide{height: 300px;}
+    .container{width: 700px;}
+    .Top ul {overflow-x: scroll; width: 100%; flex-wrap: nowrap; display: flex; justify-content: start;}
+    .Top ul::-webkit-scrollbar{display: none;}
+    .Top ul>li{width: 33.3%; height: 275px;}
+    .Top ul>li.box1, .Top ul>li.box2{margin-right: 65px;}
+    .Top ul>li div.top_box {margin: 6px auto 8px; width: 180px; height: 180px;}
+    .Top ul>li .icon{width: 180px;} 
+    .Top ul>li .icon img {width: 16px; height: 16px;}
+    .Top ul>li p{font-size: 13px; width: 180px; margin: 3px auto;}
+    .recommend .tit a{font-size: 12px;}
+    .recommend .tit a img {width: 9px; height: 9px; margin-left: 3px;}
+    .recommend ul li.course1{margin-right: 10px;}
+    .recommend ul li, .recommend ul li div {width: 345px; height: 190px;}
+    .recommend ul li h3{font-size: 17px;}
+    .recommend ul li p{font-size: 10px; top: 82px;}
+    .recommend{margin-top: 100px; height: 220px;}
+    .Top{margin-top: 100px; height:300px;}
+    footer {height: 130px;}
+    footer .fo_mar{width: 583px; height: 53px; padding-top: 45px;}
+    footer .fo_mar h1{width: 143px; height: 47px; margin-right: 42px;}
+    footer .fo_mar nav{width: 378px;}
+    footer .fo_mar nav .fo_menu li{margin-right: 15px; font-size: 12px;}
+    footer .fo_mar p{font-size: 10px; margin-top: 0px;}
+}
+
+
+@media (min-width:650px) and (max-width:699.9px){
+    header{height: 142px;}
+    header h1{width: 215px; height: 67px; margin: 23px auto;}
+    header .lo_jo {width: 88px;height: 15px;}
+    header .lo_jo li{font-size: 10px;}
+    header nav{height: 50px;}
+    header nav .gnb>li{font-size: 10px; line-height: 50px;}
+    header nav .gnb>li>a{height: 46.984px;}
+    .slide{height: 250px;}
+    .container{width: 630px;}
+    .Top{margin-top: 80px; height:300px;}
+    .Top h2{font-size: 14px;}
+    .Top ul {overflow-x: scroll; width: 100%; flex-wrap: nowrap; display: flex; justify-content: start;}
+    .Top ul::-webkit-scrollbar{display: none;}
+    .Top ul>li{width: 33.3%; height: 230px;}
+    .Top ul>li.box1, .Top ul>li.box2{margin-right: 65px;}
+    .Top ul>li div.top_box {margin: 6px auto 5px; width: 150px; height: 150px}
+    .Top ul>li .icon{width: 150px;} 
+    .Top ul>li .icon img {width: 13px; height: 13px;}
+    .Top ul>li p{font-size: 11px; width: 150px; margin: 3px auto;}
+    .recommend{margin-top: 50px; height: 240px;}
+    .recommend .tit h2{font-size: 14px;}
+    .recommend .tit a{font-size: 10px;}
+    .recommend .tit a img {width: 7px; height: 7px; margin-left: 3px;}
+    .recommend ul li.course1{margin-right: 10px;}
+    .recommend ul li, .recommend ul li div {width: 310px; height: 170px;}
+    .recommend ul li h3{font-size: 15px; top: 20px; right: 20px;}
+    .recommend ul li p{font-size: 10px; top: 67px; right: 20px;}
+    footer {height: 130px; margin-top: 110px;}
+    footer .fo_mar{width: 583px; height: 53px; padding-top: 45px;}
+    footer .fo_mar h1{width: 130px; height: 40px; margin-right: 42px;}
+    footer .fo_mar nav{width: 378px;}
+    footer .fo_mar nav .fo_menu li{margin-right: 15px; font-size: 10px;}
+    footer .fo_mar p{font-size: 10px; margin-top: 0px;}
+}
+
+@media (min-width:600px) and (max-width:649.9px){
+    header{height: 142px;}
+    header h1{width: 215px; height: 67px; margin: 23px auto;}
+    header .lo_jo {width: 88px;height: 15px;}
+    header .lo_jo li{font-size: 10px;}
+    header nav{height: 50px;}
+    header nav .gnb{width:600px;}
+    header nav .gnb>li{font-size: 10px; line-height: 50px; width: 16%;}
+    header nav .gnb>li>a{height: 46.984px;}
+    .slide{height: 250px;}
+    .container{width: 530px;}
+    .Top{margin-top: 80px; height:247px;}
+    .Top h2{font-size: 14px;}
+    .Top ul {overflow-x: scroll; width: 100%; flex-wrap: nowrap; display: flex; justify-content: start;}
+    .Top ul::-webkit-scrollbar{display: none;}
+    .Top ul>li{width: 33.3%; height: 185px;}
+    .Top ul>li.box1, .Top ul>li.box2{margin-right: 65px;}
+    .Top ul>li div.top_box {margin: 5px auto -2px; width: 120px; height: 120px}
+    .Top ul>li .icon{width: 120px;} 
+    .Top ul>li .icon img {width: 11px; height: 10px;}
+    .Top ul>li .icon img:nth-child(4){margin-top: 8px;}
+    .Top ul>li p{font-size: 10px; width: 120px; margin: 3px auto;}
+    .recommend{margin-top: 50px; height: 214px;}
+    .recommend .tit h2{font-size: 14px;}
+    .recommend .tit a{font-size: 10px;}
+    .recommend .tit a img {width: 7px; height: 7px; margin-left: 3px;}
+    .recommend ul li.course1{margin-right: 10px;}
+    .recommend ul li, .recommend ul li div {width: 260px; height: 142px;}
+    .recommend ul li h3{font-size: 13px; top: 20px; right: 20px;}
+    .recommend ul li p{font-size: 10px; top: 63px; right: 20px;}
+    footer {height: 130px; margin-top: 110px;}
+    footer .fo_mar{width: 444px; height: 53px; padding-top: 45px;}
+    footer .fo_mar h1{width: 130px; height: 40px; margin-right: 42px;}
+    footer .fo_mar nav{width: 272px;}
+    footer .fo_mar nav .fo_menu li{margin-right: 15px; font-size: 10px;}
+    footer .fo_mar p{font-size: 10px; margin-top: 0px; width: 267px;}
+}
+
+@media (min-width:550px) and (max-width:599.9px){
+    header{height: 119px;}
+    header h1{width: 165px; height: 51px; margin: 16px auto;}
+    header .lo_jo {width: 88px;height: 15px;}
+    header .lo_jo li{font-size: 10px;}
+    header nav{height: 50px;}
+    header nav .gnb{width:550px;}
+    header nav .gnb>li{font-size: 10px; line-height: 50px; width: 82px; height: 50px;}
+    header nav .gnb>li>a{height: 46.984px;}
+    .slide{height: 210px;}
+    .container{width: 530px;}
+    .Top{margin-top: 50px; height:247px;}
+    .Top h2{font-size: 14px;}
+    .Top ul {overflow-x: scroll; width: 100%; flex-wrap: nowrap; display: flex; justify-content: start;}
+    .Top ul::-webkit-scrollbar{display: none;}
+    .Top ul>li{width: 33.3%; height: 185px;}
+    .Top ul>li.box1, .Top ul>li.box2{margin-right: 65px;}
+    .Top ul>li div.top_box {margin: 5px auto -2px; width: 120px; height: 120px}
+    .Top ul>li .icon{width: 120px;} 
+    .Top ul>li .icon img {width: 11px; height: 10px;}
+    .Top ul>li .icon img:nth-child(4){margin-top: 8px;}
+    .Top ul>li p{font-size: 10px; width: 120px; margin: 3px auto;}
+    .recommend{margin-top: 50px; height: 214px;}
+    .recommend .tit h2{font-size: 14px;}
+    .recommend .tit a{font-size: 10px;}
+    .recommend .tit a img {width: 7px; height: 7px; margin-left: 3px;}
+    .recommend ul li.course1{margin-right: 10px;}
+    .recommend ul li, .recommend ul li div {width: 260px; height: 142px;}
+    .recommend ul li h3{font-size: 13px; top: 20px; right: 20px;}
+    .recommend ul li p{font-size: 10px; top: 63px; right: 20px;}
+    footer {height: 130px; margin-top: 70px;}
+    footer .fo_mar{width: 444px; height: 53px; padding-top: 45px;}
+    footer .fo_mar h1{width: 130px; height: 40px; margin-right: 42px;}
+    footer .fo_mar nav{width: 272px;}
+    footer .fo_mar nav .fo_menu li{margin-right: 15px; font-size: 10px;}
+    footer .fo_mar p{font-size: 10px; margin-top: 0px; width: 267px;}
+}
+
+@media (min-width:500px) and (max-width:549.9px){
+    header{height: 119px;}
+    header h1{width: 165px; height: 51px; margin: 16px auto;}
+    header .lo_jo {width: 88px;height: 15px;}
+    header .lo_jo li{font-size: 10px;}
+    header nav{height: 50px;}
+    header nav .gnb{width:100%;}
+    header nav .gnb>li{font-size: 10px; line-height: 50px; width: 76px; height: 50px;}
+    header nav .gnb>li>a{height: 46.984px;}
+    .slide{height: 210px;}
+    .container{width: 450px;}
+    .Top{margin-top: 50px; height:247px;}
+    .Top .top_scroll{margin-top: -10px; height:247px; overflow: hidden; overflow: scroll;}
+    .Top h2{font-size: 14px;}
+    .Top .top_scroll ul {overflow-x: scroll; width: 531px; flex-wrap: nowrap; display: flex; justify-content: start;}
+    .Top ul::-webkit-scrollbar,  .Top .top_scroll::-webkit-scrollbar{display: none;}
+    .Top ul>li{width: 33.3%; height: 185px;}
+    .Top ul>li.box1, .Top ul>li.box2{margin-right: 65px;}
+    .Top ul>li div.top_box {margin: 5px auto -2px; width: 120px; height: 120px}
+    .Top ul>li .icon{width: 120px;} 
+    .Top ul>li .icon img {width: 11px; height: 10px;}
+    .Top ul>li .icon img:nth-child(4){margin-top: 8px;}
+    .Top ul>li p{font-size: 10px; width: 120px; margin: 3px auto;}
+    .recommend{margin-top: 50px; height: 214px;}
+    .recommend .tit h2{font-size: 14px;}
+    .recommend .tit a{font-size: 10px;}
+    .recommend .tit a img {width: 7px; height: 7px; margin-left: 3px;}
+    .recommend ul li.course1{margin-right: 10px;}
+    .recommend ul li, .recommend ul li div {width: 220px; height: 120px;}
+    .recommend ul li h3{font-size: 12px; top: 10px; right: 10px;}
+    .recommend ul li p{font-size: 10px; top: 47px; right: 10px;}
+    footer {height: 130px; margin-top: 70px;}
+    footer .fo_mar{width: 444px; height: 53px; padding-top: 45px;}
+    footer .fo_mar h1{width: 130px; height: 40px; margin-right: 42px;}
+    footer .fo_mar nav{width: 272px;}
+    footer .fo_mar nav .fo_menu li{margin-right: 15px; font-size: 10px;}
+    footer .fo_mar p{font-size: 10px; margin-top: 0px; width: 267px;}
+}
+
+@media (min-width:450px) and (max-width:499.9px){
+    header{height: 119px;}
+    header h1{width: 165px; height: 51px; margin: 16px auto;}
+    header .lo_jo {width: 88px;height: 15px; right: 5%;}
+    header .lo_jo li{font-size: 10px;}
+    header nav{height: 50px;}
+    header nav .gnb{width:100%;}
+    header nav .gnb>li{font-size: 10px; line-height: 50px; width: 65px; height: 50px;}
+    header nav .gnb>li>a{height: 46.984px;}
+    .slide{height: 170px;}
+    .container{width: 400px;}
+    .Top{margin-top: 50px; height:247px;}
+    .Top .top_scroll{margin-top: -20px; height:229px; overflow: hidden; overflow: scroll;}
+    .Top h2{font-size: 13px;}
+    .Top .top_scroll ul {overflow-x: scroll; width: 531px; flex-wrap: nowrap; display: flex; justify-content: start;}
+    .Top ul::-webkit-scrollbar,  .Top .top_scroll::-webkit-scrollbar{display: none;}
+    .Top ul>li{width: 33.3%; height: 185px;}
+    .Top ul>li.box1, .Top ul>li.box2{margin-right: 65px;}
+    .Top ul>li div.top_box {margin: 5px auto -2px; width: 120px; height: 120px}
+    .Top ul>li .icon{width: 120px;} 
+    .Top ul>li .icon img {width: 11px; height: 10px;}
+    .Top ul>li .icon img:nth-child(4){margin-top: 8px;}
+    .Top ul>li p{font-size: 10px; width: 120px; margin: 3px auto;}
+    .recommend{margin-top: 50px; height: 148px;}
+    .recommend .tit{height: 20px;}
+    .recommend .tit h2{font-size: 13px;}
+    .recommend .tit a{font-size: 10px;}
+    .recommend .tit a img {width: 7px; height: 7px; margin-left: 3px;}
+    .recommend ul{margin-top:20px;}
+    .recommend ul li.course1{margin-right: 10px;}
+    .recommend ul li, .recommend ul li div {width: 195px; height: 107px;}
+    .recommend ul li h3{font-size: 12px; top: 10px; right: 10px;}
+    .recommend ul li p{font-size: 10px; top: 47px; right: 10px;}
+    footer {height: 115px; margin-top: 70px;}
+    footer .fo_mar{width: 392px; height: 53px; padding-top: 40px;}
+    footer .fo_mar h1{width: 100px; height: 35px; margin-right: 20px;}
+    footer .fo_mar nav{width: 272px;}
+    footer .fo_mar nav .fo_menu li{margin-right: 15px; font-size: 10px;}
+    footer .fo_mar p{font-size: 10px; margin-top: 0px; width: 267px;}
+}
+
+@media (min-width:400px) and (max-width:449.9px){
+    header{height: 119px;}
+    header h1{width: 165px; height: 51px; margin: 16px auto;}
+    header .lo_jo {width: 88px;height: 15px; right: 3%;}
+    header .lo_jo li{font-size: 10px;}
+    header nav{height: 50px;}
+    header nav .gnb{width:100%;}
+    header nav .gnb>li{font-size: 10px; line-height: 50px; width: 55px; height: 50px;}
+    header nav .gnb>li>a{height: 46.984px;}
+    .slide{height: 150px;}
+    .container{width: 350px;}
+    .Top{margin-top: 50px; height:247px;}
+    .Top .top_scroll{margin-top: -20px; height:245px; overflow: hidden; overflow: scroll;}
+    .Top h2{font-size: 13px;}
+    .Top .top_scroll ul {overflow-x: scroll; width: 574px; flex-wrap: nowrap; display: flex; justify-content: start;}
+    .Top ul::-webkit-scrollbar,  .Top .top_scroll::-webkit-scrollbar{display: none;}
+    .Top ul>li{width: 33.3%; height: 201px;}
+    .Top ul>li.box1, .Top ul>li.box2{margin-right: 60px;}
+    .Top ul>li div.top_box {margin: 8px auto 0px; width: 130px; height: 130px;}
+    .Top ul>li .icon{width: 130px;} 
+    .Top ul>li .icon img {width: 13px; height: 13px;}
+    .Top ul>li .icon img:nth-child(4){margin-top: 5px;}
+    .Top ul>li p{font-size: 10px; width: 130px; margin: 3px auto;}
+    .recommend{margin-top: 50px; height: 265px;}
+    .recommend .tit{height: 20px;}
+    .recommend .tit h2{font-size: 13px;}
+    .recommend .tit a{font-size: 10px;}
+    .recommend .tit a img {width: 7px; height: 7px; margin-left: 3px;}
+    .recommend ul{margin-top:20px; }
+    .recommend ul li.course1{margin-right: 0; }
+    .recommend ul li, .recommend ul li div {width: 100%; height: 107px; overflow: hidden;}
+    .recommend ul li:last-child{margin-top: 10px;}
+    .recommend ul li img{object-fit: cover; margin-top:-25px;}
+    .recommend ul li h3{font-size: 12px; top: 15px; right: 15px;}
+    .recommend ul li p{font-size: 10px; top: 53px; right: 15px;}
+    footer {height: 115px; margin-top: 70px;}
+    footer .fo_mar{width: 392px; height: 53px; padding-top: 40px;}
+    footer .fo_mar h1{width: 100px; height: 35px; margin-right: 20px;}
+    footer .fo_mar nav{width: 272px;}
+    footer .fo_mar nav .fo_menu li{margin-right: 15px; font-size: 10px;}
+    footer .fo_mar p{font-size: 10px; margin-top: 0px; width: 267px;}
+}
+
+@media (min-width:350px) and (max-width:399.9px){
+    header{height: 119px;}
+    header h1{width: 165px; height: 51px; margin: 16px auto;}
+    header .lo_jo {width: 88px;height: 15px; right: 3%;}
+    header .lo_jo li{font-size: 10px;}
+    header nav{height: 50px;}
+    header nav .gnb{width:100%;}
+    header nav .gnb>li{font-size: 10px; line-height: 50px; width: 49px; height: 50px; margin-right: 26px;}
+    header nav .gnb>li>a{height: 46.984px;}
+    .slide{height: 135px;}
+    .container{width: 320px;}
+    .Top{margin-top: 50px; height:247px;}
+    .Top .top_scroll{margin-top: -20px; height:245px; overflow: hidden; overflow: scroll;}
+    .Top h2{font-size: 13px;}
+    .Top .top_scroll ul {overflow-x: scroll; width: 502px; flex-wrap: nowrap; display: flex; justify-content: start;}
+    .Top ul::-webkit-scrollbar,  .Top .top_scroll::-webkit-scrollbar{display: none;}
+    .Top ul>li{width: 33.3%; height: 201px;}
+    .Top ul>li.box1, .Top ul>li.box2{margin-right: 33px;}
+    .Top ul>li div.top_box {margin: 8px auto 0px; width: 130px; height: 130px;}
+    .Top ul>li .icon{width: 130px;} 
+    .Top ul>li .icon img {width: 13px; height: 13px;}
+    .Top ul>li .icon img:nth-child(4){margin-top: 5px;}
+    .Top ul>li p{font-size: 10px; width: 130px; margin: 3px auto;}
+    .recommend{margin-top: 50px; height: 265px;}
+    .recommend .tit{height: 20px;}
+    .recommend .tit h2{font-size: 13px;}
+    .recommend .tit a{font-size: 10px;}
+    .recommend .tit a img {width: 7px; height: 7px; margin-left: 3px;}
+    .recommend ul{margin-top:20px; }
+    .recommend ul li.course1{margin-right: 0; }
+    .recommend ul li, .recommend ul li div {width: 100%; height: 107px; overflow: hidden;}
+    .recommend ul li:last-child{margin-top: 10px;}
+    .recommend ul li img{object-fit: cover; margin-top:-25px;}
+    .recommend ul li h3{font-size: 12px; top: 15px; right: 15px;}
+    .recommend ul li p{font-size: 10px; top: 53px; right: 15px;}
+    footer {height: 115px; margin-top: 40px;}
+    footer .fo_mar{width: 346px; height: 53px; padding-top: 40px;}
+    footer .fo_mar h1{width: 100px; height: 35px; margin-right: 10px;}
+    footer .fo_mar nav{width: 236px;}
+    footer .fo_mar nav .fo_menu li{margin-right: 6px; font-size: 10px;}
+    footer .fo_mar p{font-size: 10px; margin-top: 0px; width: 192px;}
+}
+
+@media (min-width:300px) and (max-width:349.9px){
+    header{height: 100px;}
+    header h1{width: 84px; height: 38px; margin:10px auto;}
+    header .lo_jo {width: 88px;height: 15px; right: 3%; top: 25px;}
+    header .lo_jo li{font-size: 10px;}
+    header nav{height: 50px;}
+    header nav .gnb{width:100%;}
+    header nav .gnb>li{font-size: 10px; line-height: 50px; width: 49px; height: 50px; margin-right: 13px;}
+    header nav .gnb>li>a{height: 46.984px;}
+    .slide{height: 135px;}
+    .container{width: 260px;}
+    .Top{margin-top: 40px; height:247px;}
+    .Top .top_scroll{margin-top: -20px; height:245px; overflow: hidden; overflow: scroll;}
+    .Top h2{font-size: 13px;}
+    .Top .top_scroll ul {overflow-x: scroll; width: 502px; flex-wrap: nowrap; display: flex; justify-content: start;}
+    .Top ul::-webkit-scrollbar,  .Top .top_scroll::-webkit-scrollbar{display: none;}
+    .Top ul>li{width: 33.3%; height: 201px;}
+    .Top ul>li.box1, .Top ul>li.box2{margin-right: 33px;}
+    .Top ul>li div.top_box {margin: 8px auto 0px; width: 130px; height: 130px;}
+    .Top ul>li .icon{width: 130px;} 
+    .Top ul>li .icon img {width: 13px; height: 13px;}
+    .Top ul>li .icon img:nth-child(4){margin-top: 5px;}
+    .Top ul>li p{font-size: 10px; width: 130px; margin: 3px auto;}
+    .recommend{margin-top: 40px; height: 265px;}
+    .recommend .tit{height: 20px;}
+    .recommend .tit h2{font-size: 13px;}
+    .recommend .tit a{font-size: 10px;}
+    .recommend .tit a img {width: 7px; height: 7px; margin-left: 3px;}
+    .recommend ul{margin-top:20px; }
+    .recommend ul li.course1{margin-right: 0; }
+    .recommend ul li, .recommend ul li div {width: 100%; height: 107px; overflow: hidden;}
+    .recommend ul li:last-child{margin-top: 10px;}
+    .recommend ul li img{object-fit: cover; margin-top:-25px;}
+    .recommend ul li h3{font-size: 12px; top: 15px; right: 15px;}
+    .recommend ul li p{font-size: 10px; top: 53px; right: 15px;}
+    footer {height: 115px; margin-top: 40px;}
+    footer .fo_mar{width: 259px; height: 77px; padding-top: 16px;}
+    footer .fo_mar h1{width: 87px; height: 32px; margin-right: 0px;}
+    footer .fo_mar nav{width: 256px; margin-top: 14px; height: 18px;}
+    footer .fo_mar nav .fo_menu li{margin-right: 11px; font-size: 10px;}
+    footer .fo_mar p{font-size: 10px; margin-top: 6px; width: 192px;}
+}
+
+@media (max-width:299.9px){
+    body{margin-top: -20px;}
+    header{height: 100px;}
+    header h1{width: 94px; height: 32px; margin:37px auto 19px;}
+    header .lo_jo {width: 78px;height: 15px; right: 0; top: 25px;}
+    header .lo_jo li{font-size: 10px; margin-right: 5px;}
+    header nav{height: 50px;  overflow: hidden; overflow: scroll;}
+    header nav .gnb{width: 298px; overflow-x: scroll; flex-wrap: nowrap; display: flex; justify-content: start;}
+    header nav .gnb>li{font-size: 10px; line-height: 50px; width: 49px; height: 49px; margin-right: 13px;}
+    header nav .gnb>li>a{height: 46.984px;}
+    .slide{height: 135px;}
+    .container{width: 200px;}
+    .Top{margin-top: 40px; height:247px;}
+    .Top .top_scroll{margin-top: -20px; height:245px; overflow: hidden; overflow: scroll;}
+    .Top h2{font-size: 13px;}
+    .Top .top_scroll ul {overflow-x: scroll; width: 502px; flex-wrap: nowrap; display: flex; justify-content: start;}
+    .Top ul::-webkit-scrollbar,  .Top .top_scroll::-webkit-scrollbar, header nav::-webkit-scrollbar{display: none;}
+    .Top ul>li{width: 33.3%; height: 201px;}
+    .Top ul>li.box1, .Top ul>li.box2{margin-right: 33px;}
+    .Top ul>li div.top_box {margin: 8px auto 0px; width: 130px; height: 130px;}
+    .Top ul>li .icon{width: 130px;} 
+    .Top ul>li .icon img {width: 13px; height: 13px;}
+    .Top ul>li .icon img:nth-child(4){margin-top: 5px;}
+    .Top ul>li p{font-size: 10px; width: 130px; margin: 3px auto;}
+    .recommend{margin-top: 40px; height: 265px;}
+    .recommend .tit{height: 20px;}
+    .recommend .tit h2{font-size: 13px;}
+    .recommend .tit a{font-size: 10px;}
+    .recommend .tit a img {width: 7px; height: 7px; margin-left: 3px;}
+    .recommend ul{margin-top:20px; }
+    .recommend ul li.course1{margin-right: 0; }
+    .recommend ul li, .recommend ul li div {width: 100%; height: 107px; overflow: hidden;}
+    .recommend ul li:last-child{margin-top: 10px;}
+    .recommend ul li img{object-fit: cover; margin-top:0px;}
+    .recommend ul li h3{font-size: 12px; top: 10px; right: 10px;}
+    .recommend ul li p{font-size: 10px; top: 46px; right: 10px;}
+    footer {height: 115px; margin-top: 40px;}
+    footer .fo_mar{width: 225px; height: 77px; padding-top: 16px;}
+    footer .fo_mar h1{width: 87px; height: 32px; margin-right: 0px;}
+    footer .fo_mar nav{width: 228px; margin-top: 14px; height: 18px;}
+    footer .fo_mar nav .fo_menu li{margin-right: 4px; font-size: 10px;}
+    footer .fo_mar p{font-size: 10px; margin-top: 6px; width: 192px;}
 }

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>어디갈까?</title>
     <link rel="stylesheet" href="./css/style.css" type="text/css">
-    <link rel="stylesheet" href="header/header.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
@@ -17,7 +16,7 @@
     <header>
         <h1>
             <a href="./main.html">
-                <img src="./img/logo.png" alt="어디갈까_logo">
+                <img src="./img/logo.png" alt="어디갈까_logo" class="logo_img">
             </a>
             <ul class='lo_jo'>
                 <li><a href='./login/login.html'>로그인</a></li>
@@ -27,11 +26,11 @@
         </h1>
         <nav>
             <ul class="gnb">
-                <li><a href="./main.html">홈</a></li>
+                <li class="on"><a href="./main.html">홈</a></li>
                 <li><a href="./city/city.html">도시별 장소</a></li>
                 <li><a href="./theme/theme.html">테마별 장소</a></li>
-                <li><a href="./calender/calender.html">캘린더</a></li>
-                <li><a href="./mypage-not_login/MyPage-not_login.html">마이페이지</a></li>
+                <li><a href="#">캘린더</a></li>
+                <li><a href="#">마이페이지</a></li>
             </ul>
         </nav>
     </header>
@@ -43,11 +42,11 @@
         </div>
         <div class="container">
             <div class="Top">
-                <h2>인기 장소 Top3</h2>
+                <h2>인기 코스 Top3</h2>
+                <div class="top_scroll">
                 <ul>
-                    <a href="placepost/placepost.html">
                     <li class="box1">
-                        <img src="./img/Top_1.png" alt="어디갈까_Top1">
+                        <div class="top_box"><img src="./img/Top_1.png" alt="어디갈까_Top1"></div>
                         <div class="icon">
                             <img src="./img/heart_full.png" alt="love_icon">
                             <img src="./img/chat.png" alt="chat">
@@ -55,12 +54,11 @@
                             <img src="./img/save.png" alt="save">
                         </div>
                         <p>
-                            #익스트림 #스포츠 #이색데이트 <br> #커플취미 #인생샷
+                            #익스트림 #스포츠 #이색데이트 #커플취미 #인생샷
                         </p>
-                    </li></a>
-                    <a href="placepost/placepost.html">
+                    </li>
                     <li class="box2">
-                        <img src="./img/Top_2.png" alt="어디갈까_Top2">
+                        <div class="top_box"><img src="./img/Top_2.png" alt="어디갈까_Top2"></div>
                         <div class="icon">
                             <img src="./img/heart_full.png" alt="love_icon">
                             <img src="./img/chat.png" alt="chat">
@@ -68,12 +66,11 @@
                             <img src="./img/save.png" alt="save">
                         </div>
                         <p>
-                            #집콕 #인생영화 #휴식데이트 #힐링<br>  #넷플릭스
+                            #집콕 #인생영화 #휴식데이트 #힐링 #넷플릭스
                         </p>
-                    </li></a>
-                    <a href="placepost/placepost.html">
+                    </li>
                     <li class="box3">
-                        <img src="./img/Top_3.png" alt="어디갈까_Top3">
+                        <div class="top_box"><img src="./img/Top_3.png" alt="어디갈까_Top3"></div>
                         <div class="icon">
                             <img src="./img/heart_full.png" alt="love_icon">
                             <img src="./img/chat.png" alt="chat">
@@ -83,18 +80,14 @@
                         <p>
                             #기분전환 #추억 #드라이브 #전국맛집 #집가기싫다
                         </p>
-                    </li></a>
-                    
+                    </li>
                 </ul>
-                <p class="controller">
-                    <span class="prev">&lang;</span>
-                    <span class="next">&rang;</span>
-                </p>
+            </div>
             </div>
             <div class="recommend">
                 <div class="tit">
                     <h2>추천 코스</h2>
-                    <a href="./theme/theme.html">더보기<img src="./img/next.png" alt="next"></a>
+                    <a href="#">더보기<img src="./img/next.png" alt="next"></a>
                 </div>
                 <ul>
                     <li class="course1">
@@ -118,6 +111,7 @@
         </div>
     </div>
     <footer>
+        <div class="fo_mar">
         <h1>
             <img src='../img/logo_g.png'></img>
         </h1>
@@ -130,6 +124,7 @@
             </ul>           
         </nav>
         <p>ⓒ 어디갈까? ALL RIGHTS RESERVED.</p>
+        </div>
     </footer>
 </body>
 </html>
