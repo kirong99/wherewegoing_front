@@ -57,7 +57,7 @@ ul{list-style: none;}
 
 
 /* 최근 본 추천 */
-.lastRecommend{width: 1260px; height: 360px; margin: 0 auto; margin-top: 60px;margin-top: 177px;}
+.lastRecommend{width: 1260px; height: 360px; margin: 0 auto; margin-top: 60px;position: relative;top: 50px;}
 .lastRecommend > p{text-align: center;font-weight: bold; font-size: 20px;margin-bottom: 30px;}
 .lastRecommend > ul > li {width: 620px; float: left;height: 360px;position: relative;}
 .lastRecommend > ul > .left_re{margin-right: 20px;}
@@ -102,6 +102,13 @@ footer p{color: #707070;font-size: 16px;position: absolute;left: 844px;bottom: 4
     .intro ul li:nth-of-type(1) p:nth-of-type(1) span{font-size: 18px;}
     .intro ul li button{width: 100px;height: 30px;font-size: 10px;top: 14px;}
     .subMenu{width: 100%;margin-top: 30px;}
+    .lastPlace{width: 100%;}
+    .lastRecommend{width: 100%; margin-top: 400px;}
+    .lastRecommend p{font-size: 15px;}
+    .lastRecommend > ul > li{width: 350px; height: 180px;position: relative;left: 65px;margin-bottom: 20px;}
+    .lastRecommend > ul > li > a > img{width: 100%;height: 100%;}
+    .lastRecommend > ul > li > a > div > h6{font-size: 15px;margin-top: 50px;}
+    .lastRecommend > ul > li > a > div > h3{font-size: 20px;margin-top: 15px;}
 }
 
 /* 대중화된 모바일 가로 */

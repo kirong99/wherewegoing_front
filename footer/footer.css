@@ -48,7 +48,7 @@ footer{
     height: 172px;
     background-color: #C7C7C7;
     position: relative;
-    margin-top: 130px;
+    top: 100px;
 }
 
 footer .fo_mar{width: 784px; height: 70px; margin: 0 auto; padding-top: 57px;}
