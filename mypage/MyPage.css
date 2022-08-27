@@ -1,6 +1,19 @@
-*{margin: 0; padding: 0; list-style: none; box-sizing: border-box;font-family: 'Noto Sans KR', sans-serif;}
-a{text-decoration: none;color:black}
-ul{list-style: none;}
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 100%;
+    margin: 0 auto;
+}
 
 /* 부제목 */
 .title{width: 1220px;height: 20px;display: flex;justify-content: space-between;margin: 0 auto; margin-top: 20px;color: #cccccc;font-size: 15px;font-weight: 500;color: #707070;}
@@ -17,13 +30,13 @@ ul{list-style: none;}
 
 
 /* 메뉴 */
-.subMenu{width: 1260px;height: 150px;margin:0 auto; margin-top: 69px;font-weight: 400;}
+.subMenu{width: 1280px;height: 150px;margin:0 auto; margin-top: 69px;font-weight: 400;}
 .subMenu .top{width: 100%;height: 75px; font-size: 15px;}
-.subMenu .top > div{width: 50%;height: 75px;float: left;text-align: center;border-bottom: solid 1px #b6b6b6; border-top: solid 1px #b6b6b6;line-height: 75px;}
-.subMenu .top > div:first-child{border-right: 1px solid #b6b6b6;}
+.subMenu .top > div{width: calc((1280px - 20px) / 2);height: 75px;float: left;text-align: center;border-bottom: solid 1px #b6b6b6; border-top: solid 1px #b6b6b6;line-height: 75px;}
+.subMenu .top > div:nth-of-type(2){border-left: 1px solid #b6b6b6;}
 .subMenu .top > div > a .icon{width: 25px;height: 22px; float: right; margin: 28px 43px 25px 0;}
 .subMenu .bottom{width: 100%;height: 75px; font-size: 15px;}
-.subMenu .bottom > div{width: 50%;height: 75px;float: left;text-align: center;border-bottom: solid 1px #b6b6b6;line-height: 75px;}
+.subMenu .bottom > div{width: calc((1280px - 20px) / 2);height: 75px;float: left;text-align: center;border-bottom: solid 1px #b6b6b6;line-height: 75px;}
 .subMenu .bottom > div:first-child{border-right: 1px solid #b6b6b6;}
 .subMenu .bottom > div > a .icon{width: 25px;height: 22px; float: right; margin: 28px 43px 25px 0;}
 .subMenu .icon{filter: invert(77%) sepia(0%) saturate(0%) hue-rotate(71deg) brightness(95%) contrast(92%);}
@@ -33,7 +46,7 @@ ul{list-style: none;}
 .lastPlace > p{text-align: center;font-weight: 700;font-size: 20px;}
 .lastPlace > div{float: left;border: 1px solid #b6b6b6; margin-top: 30px;}
 
-.lastPlace > .left{display: flex;width: 620px;padding: 20px;font-weight: 500;margin-right: 20px;}
+.lastPlace > .left{display: flex;width: 575px;padding: 20px;font-weight: 500;margin-right: 20px;}
 .lastPlace > .left a{width: 160px;height: 160px;}
 .lastPlace > .left a img{width: 160px;height: 160px;}
 .lastPlace > .left > div{width: 80%;margin-left: 10px;}
@@ -44,7 +57,7 @@ ul{list-style: none;}
 .lastPlace > .left > div > div > p:nth-of-type(2){margin-left: 10px;font-size: 15px;margin-bottom: 15px;color: #707070;}
 .lastPlace > .left > div > div > p > span{font-size: 10px;color: red;margin-left: 2px;}
 
-.lastPlace > .right{display: flex;padding: 20px;font-weight: 500;width: 620px;}
+.lastPlace > .right{display: flex;padding: 20px;font-weight: 500;width: 575px;}
 .lastPlace > .right a{width: 160px;height: 160px;}
 .lastPlace > .right a img{width: 160px;height: 160px;}
 .lastPlace > .right > div{width: 80%;margin-left: 10px;}
@@ -101,18 +114,31 @@ footer p{color: #707070;font-size: 16px;position: absolute;left: 844px;bottom: 4
     .intro ul li:nth-of-type(1){margin-right: 40px;}
     .intro ul li:nth-of-type(1) p:nth-of-type(1) span{font-size: 18px;}
     .intro ul li button{width: 100px;height: 30px;font-size: 10px;top: 14px;}
-    .subMenu{width: 100%;margin-top: 30px;}
-    .lastPlace{width: 100%;}
-    .lastRecommend{width: 100%; margin-top: 400px;}
+    .subMenu{margin-top: 30px;}
+    .lastPlace{width: 100%;position: relative;}
+    .lastPlace > p{font-size: 15px;}
+    .lastPlace > .left{width: 400px;height: 130px;position: absolute;left: 50%;top: 80%;transform: translate(-50%,-50%);}
+    .lastPlace > .right{width: 400px;height: 130px;position: absolute;left: 50%;top: 245%;transform: translate(-50%,-50%);}
+    .lastPlace > .left a img{width: 120px;height: 120px;}
+    .lastPlace > .left > div > div:first-child > p:nth-of-type(1){font-size: 15px;}
+    .lastPlace > .left > div > div > p{font-size: 12px;}
+    .lastPlace > .left > div > div > p:nth-of-type(2){font-size: 10px;}
+    .lastPlace > .right a img{width: 120px;height: 120px;}
+    .lastPlace > .right > div > div:first-child > p:nth-of-type(1){font-size: 15px;}
+    .lastPlace > .right > div > div > p{font-size: 12px;}
+    .lastPlace > .right > div > div > p:nth-of-type(2){font-size: 10px;}
+    .lastRecommend{width: 100%; margin-top: 300px;position: relative;}
     .lastRecommend p{font-size: 15px;}
-    .lastRecommend > ul > li{width: 350px; height: 180px;position: relative;left: 65px;margin-bottom: 20px;}
+    .lastRecommend > ul > li{width: 350px; height: 180px;position: absolute;left: 50%;top: 45%;transform: translate(-50%,-50%);}
+    .lastRecommend > ul > li:nth-of-type(2){width: 350px; height: 180px;position: absolute;left: 50%;top: 110%;transform: translate(-50%,-50%);}
     .lastRecommend > ul > li > a > img{width: 100%;height: 100%;}
     .lastRecommend > ul > li > a > div > h6{font-size: 15px;margin-top: 50px;}
     .lastRecommend > ul > li > a > div > h3{font-size: 20px;margin-top: 15px;}
+
 }
 
 /* 대중화된 모바일 가로 */
-@media (max-width: 576px) and (max-width:767px){
+@media (min-width: 576px) and (max-width:767px){
     .title{width: 100%;font-size: 10px;margin-left: 10px;}
     .intro{width: 100%;}
     .intro ul{left: 20px;}
@@ -121,10 +147,22 @@ footer p{color: #707070;font-size: 16px;position: absolute;left: 844px;bottom: 4
     .intro ul li:nth-of-type(1) p:nth-of-type(1) span{font-size: 18px;}
     .intro ul li button{width: 100px;height: 30px;font-size: 10px;top: 14px;}
     .subMenu{width: 100%;margin-top: 30px;}
-    .lastPlace{width: 100%;}
-    .lastRecommend{width: 100%; margin-top: 400px;}
+    .lastPlace{width: 100%;position: relative;}
+    .lastPlace > p{font-size: 15px;}
+    .lastPlace > .left{width: 400px;height: 170px;position: absolute;left: 50%;top: 80%;transform: translate(-50%,-50%);}
+    .lastPlace > .right{width: 400px;height: 170px;position: absolute;left: 50%;top: 245%;transform: translate(-50%,-50%);}
+    .lastPlace > .left a img{width: 120px;height: 120px;}
+    .lastPlace > .left > div > div:first-child > p:nth-of-type(1){font-size: 15px;}
+    .lastPlace > .left > div > div > p{font-size: 12px;}
+    .lastPlace > .left > div > div > p:nth-of-type(2){font-size: 10px;}
+    .lastPlace > .right a img{width: 120px;height: 120px;}
+    .lastPlace > .right > div > div:first-child > p:nth-of-type(1){font-size: 15px;}
+    .lastPlace > .right > div > div > p{font-size: 12px;}
+    .lastPlace > .right > div > div > p:nth-of-type(2){font-size: 10px;}
+    .lastRecommend{width: 100%; margin-top: 300px;position: relative;}
     .lastRecommend p{font-size: 15px;}
-    .lastRecommend > ul > li{width: 350px; height: 180px;position: relative;left: 65px;margin-bottom: 20px;}
+    .lastRecommend > ul > li{width: 350px; height: 180px;position: absolute;left: 50%;top: 45%;transform: translate(-50%,-50%);}
+    .lastRecommend > ul > li:nth-of-type(2){width: 350px; height: 180px;position: absolute;left: 50%;top: 110%;transform: translate(-50%,-50%);}
     .lastRecommend > ul > li > a > img{width: 100%;height: 100%;}
     .lastRecommend > ul > li > a > div > h6{font-size: 15px;margin-top: 50px;}
     .lastRecommend > ul > li > a > div > h3{font-size: 20px;margin-top: 15px;}
@@ -141,10 +179,22 @@ footer p{color: #707070;font-size: 16px;position: absolute;left: 844px;bottom: 4
     .intro ul li:nth-of-type(1) p:nth-of-type(1) span{font-size: 18px;}
     .intro ul li button{width: 100px;height: 30px;font-size: 10px;top: 14px;}
     .subMenu{width: 100%;margin-top: 30px;}
-    .lastPlace{width: 100%;}
-    .lastRecommend{width: 100%; margin-top: 400px;}
+    .lastPlace{width: 100%;position: relative;}
+    .lastPlace > p{font-size: 15px;}
+    .lastPlace > .left{width: 400px;height: 170px;position: absolute;left: 50%;top: 80%;transform: translate(-50%,-50%);}
+    .lastPlace > .right{width: 400px;height: 170px;position: absolute;left: 50%;top: 245%;transform: translate(-50%,-50%);}
+    .lastPlace > .left a img{width: 120px;height: 120px;}
+    .lastPlace > .left > div > div:first-child > p:nth-of-type(1){font-size: 15px;}
+    .lastPlace > .left > div > div > p{font-size: 12px;}
+    .lastPlace > .left > div > div > p:nth-of-type(2){font-size: 10px;}
+    .lastPlace > .right a img{width: 120px;height: 120px;}
+    .lastPlace > .right > div > div:first-child > p:nth-of-type(1){font-size: 15px;}
+    .lastPlace > .right > div > div > p{font-size: 12px;}
+    .lastPlace > .right > div > div > p:nth-of-type(2){font-size: 10px;}
+    .lastRecommend{width: 100%; margin-top: 300px;position: relative;}
     .lastRecommend p{font-size: 15px;}
-    .lastRecommend > ul > li{width: 350px; height: 180px;position: relative;left: 65px;margin-bottom: 20px;}
+    .lastRecommend > ul > li{width: 350px; height: 180px;position: absolute;left: 50%;top: 45%;transform: translate(-50%,-50%);}
+    .lastRecommend > ul > li:nth-of-type(2){width: 350px; height: 180px;position: absolute;left: 50%;top: 110%;transform: translate(-50%,-50%);}
     .lastRecommend > ul > li > a > img{width: 100%;height: 100%;}
     .lastRecommend > ul > li > a > div > h6{font-size: 15px;margin-top: 50px;}
     .lastRecommend > ul > li > a > div > h3{font-size: 20px;margin-top: 15px;}
@@ -161,10 +211,22 @@ footer p{color: #707070;font-size: 16px;position: absolute;left: 844px;bottom: 4
     .intro ul li:nth-of-type(1) p:nth-of-type(1) span{font-size: 18px;}
     .intro ul li button{width: 100px;height: 30px;font-size: 10px;top: 14px;}
     .subMenu{width: 100%;margin-top: 30px;}
-    .lastPlace{width: 100%;}
-    .lastRecommend{width: 100%; margin-top: 400px;}
+    .lastPlace{width: 100%;position: relative;}
+    .lastPlace > p{font-size: 15px;}
+    .lastPlace > .left{width: 400px;height: 130px;position: absolute;left: 50%;top: 80%;transform: translate(-50%,-50%);}
+    .lastPlace > .right{width: 400px;height: 130px;position: absolute;left: 50%;top: 245%;transform: translate(-50%,-50%);}
+    .lastPlace > .left a img{width: 120px;height: 120px;}
+    .lastPlace > .left > div > div:first-child > p:nth-of-type(1){font-size: 15px;}
+    .lastPlace > .left > div > div > p{font-size: 12px;}
+    .lastPlace > .left > div > div > p:nth-of-type(2){font-size: 10px;}
+    .lastPlace > .right a img{width: 120px;height: 120px;}
+    .lastPlace > .right > div > div:first-child > p:nth-of-type(1){font-size: 15px;}
+    .lastPlace > .right > div > div > p{font-size: 12px;}
+    .lastPlace > .right > div > div > p:nth-of-type(2){font-size: 10px;}
+    .lastRecommend{width: 100%; margin-top: 300px;position: relative;}
     .lastRecommend p{font-size: 15px;}
-    .lastRecommend > ul > li{width: 350px; height: 180px;position: relative;left: 65px;margin-bottom: 20px;}
+    .lastRecommend > ul > li{width: 350px; height: 180px;position: absolute;left: 50%;top: 45%;transform: translate(-50%,-50%);}
+    .lastRecommend > ul > li:nth-of-type(2){width: 350px; height: 180px;position: absolute;left: 50%;top: 110%;transform: translate(-50%,-50%);}
     .lastRecommend > ul > li > a > img{width: 100%;height: 100%;}
     .lastRecommend > ul > li > a > div > h6{font-size: 15px;margin-top: 50px;}
     .lastRecommend > ul > li > a > div > h3{font-size: 20px;margin-top: 15px;}

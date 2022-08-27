@@ -15,8 +15,10 @@ header h1 img{width: 100%;height: 100%;}
 .alert .al h3{font-size: 11px; float: left;margin: 10px 0;}
 .alert .al p{font-size: 10px; color: #707070;width: 209px;height: 34px;float: left;text-align: left;overflow: hidden; word-wrap:break-word; text-overflow: ellipsis; word-break:break-all; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;}
 .alert .al img{position: absolute;top: 37px; right: 12px; width: 10px; height: 10px; cursor: pointer;}
-header .lo_jo{width: 210px;height: 30px;position: absolute;right: 15%;top: 40px}
+header .lo_jo{width: 250px;height: 30px;position: absolute;right: 15%;top: 40px}
 header .lo_jo li{font-size: 16px;float: left;color: #707070;margin-right: 10px;}
+header .lo_jo li button{font-size: 12px;background-color: #fff;width: 70px;border: 1px solid #707070; margin-top: 5px; border-radius: 16px;cursor: pointer;}
+header .lo_jo li button:hover{background-color: #6167B2;color: #fff;border:none}
 header .lo_jo li:nth-child(3){margin-right: 0;}
 header .lo_jo li a{width: 100%;height: 100%;display: block;}
 header nav{width: 100%;height: 80px;border-bottom: 1px solid #B6B6B6;border-top: 1px solid #B6B6B6;background: #fff;}
@@ -31,7 +33,7 @@ header nav .gnb>li>a{width: 100%;height: 100%;display: block;}
     header h1{width: 165px;height: 51px; margin: 10px auto;}/* 로고 */
     header .lo_jo {width: 100px;height: 15px;top:10px;right: 8%;}
     header .lo_jo li{font-size: 10px;float: none;}
-    header .lo_jo li button{font-size: 10px;}
+    header .lo_jo li button{font-size: 10px;background-color: #fff;width: 50px;border: 1px solid #111; margin-top: 5px;}
     header nav{height: 50px;}
     header nav .gnb{width: 100%;padding: 0;margin-left: 10%;}
     header nav .gnb>li{font-size: 10px; line-height: 50px; width: 55px; height: 50px;}
@@ -39,15 +41,16 @@ header nav .gnb>li>a{width: 100%;height: 100%;display: block;}
 }
 
 /* 대중화된 모바일 가로 */
-@media (max-width: 576px) and (max-width:767px){
-    /* header{height: 119px;}
-    header h1{width: 165px; height: 51px; margin: 16px auto;}
-    header .lo_jo {width: 88px;height: 15px; right: 3%;}
-    header .lo_jo li{font-size: 10px;}
+@media (min-width: 576px) and (max-width:767px){
+    header{height: 100px;margin: 0;}
+    header h1{width: 165px;height: 51px; margin: 10px auto;}/* 로고 */
+    header .lo_jo {width: 100px;height: 15px;top:10px;right: 8%;}
+    header .lo_jo li{font-size: 10px;float: none;}
+    header .lo_jo li button{font-size: 10px;background-color: #fff;width: 50px;border: 1px solid #111; margin-top: 5px;}
     header nav{height: 50px;}
-    header nav .gnb{width:100%;}
+    header nav .gnb{width: 100%;padding: 0;margin-left: 10%;}
     header nav .gnb>li{font-size: 10px; line-height: 50px; width: 55px; height: 50px;}
-    header nav .gnb>li>a{height: 46.984px;} */
+    header nav .gnb>li>a{height: 50px;}
 
 }
 
