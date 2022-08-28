@@ -114,8 +114,11 @@ footer p{color: #707070;font-size: 16px;position: absolute;left: 844px;bottom: 4
     .intro ul li:nth-of-type(1){margin-right: 40px;}
     .intro ul li:nth-of-type(1) p:nth-of-type(1) span{font-size: 18px;}
     .intro ul li button{width: 100px;height: 30px;font-size: 10px;top: 14px;}
-    .subMenu{margin-top: 30px;}
-    .lastPlace{width: 100%;position: relative;}
+    .subMenu{margin-top: 30px;display: inline;}
+    .subMenu .top > div{width: 100%;}
+    .subMenu .top > div:nth-of-type(2){border-top: none;border-left: none;}
+    .subMenu .bottom > div{width: 100%;}
+    .lastPlace{width: 100%;position: relative;margin-top: 186px;}
     .lastPlace > p{font-size: 15px;}
     .lastPlace > .left{width: 400px;height: 130px;position: absolute;left: 50%;top: 80%;transform: translate(-50%,-50%);}
     .lastPlace > .right{width: 400px;height: 130px;position: absolute;left: 50%;top: 245%;transform: translate(-50%,-50%);}
@@ -146,11 +149,14 @@ footer p{color: #707070;font-size: 16px;position: absolute;left: 844px;bottom: 4
     .intro ul li:nth-of-type(1){margin-right: 40px;}
     .intro ul li:nth-of-type(1) p:nth-of-type(1) span{font-size: 18px;}
     .intro ul li button{width: 100px;height: 30px;font-size: 10px;top: 14px;}
-    .subMenu{width: 100%;margin-top: 30px;}
-    .lastPlace{width: 100%;position: relative;}
+    .subMenu{margin-top: 30px;display: inline;}
+    .subMenu .top > div{width: 100%;}
+    .subMenu .top > div:nth-of-type(2){border-top: none;border-left: none;}
+    .subMenu .bottom > div{width: 100%;}
+    .lastPlace{width: 100%;position: relative;margin-top: 186px;}
     .lastPlace > p{font-size: 15px;}
-    .lastPlace > .left{width: 400px;height: 170px;position: absolute;left: 50%;top: 80%;transform: translate(-50%,-50%);}
-    .lastPlace > .right{width: 400px;height: 170px;position: absolute;left: 50%;top: 245%;transform: translate(-50%,-50%);}
+    .lastPlace > .left{width: 400px;height: 130px;position: absolute;left: 50%;top: 80%;transform: translate(-50%,-50%);}
+    .lastPlace > .right{width: 400px;height: 130px;position: absolute;left: 50%;top: 245%;transform: translate(-50%,-50%);}
     .lastPlace > .left a img{width: 120px;height: 120px;}
     .lastPlace > .left > div > div:first-child > p:nth-of-type(1){font-size: 15px;}
     .lastPlace > .left > div > div > p{font-size: 12px;}
