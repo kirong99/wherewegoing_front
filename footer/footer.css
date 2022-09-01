@@ -12,13 +12,15 @@ a{
 body{
     font-family: 'Noto Sans KR', sans-serif;
 }
-footer{
+ footer{
     width: 100%;
     height: 172px;
     background-color: #C7C7C7;
     position: relative;
+    top: 100px;
     margin-top: 130px;
 }
+/*
 footer h1{
     position: absolute;
     left: 594px;
@@ -42,14 +44,14 @@ footer p{
     position: absolute;
     left: 844px;
     bottom: 47px;
-}
+} 
 footer{
     width: 100%;
     height: 172px;
     background-color: #C7C7C7;
     position: relative;
     top: 100px;
-}
+}*/
 
 footer .fo_mar{width: 784px; height: 70px; margin: 0 auto; padding-top: 57px;}
 footer .fo_mar h1{width: 180px; height: 60px; float: left; margin-right: 100px;}
@@ -59,6 +61,21 @@ footer .fo_mar nav .fo_menu li{float: left; margin-right: 20px; font-size: 20px;
 footer .fo_mar p{color: #707070; font-size: 16px; width: 267px; height: 23px; margin-top: 10px; float: left;}
 
 @media (max-width: 575px){
-    
+    footer {height: 115px; margin-top: 70px;top: 171px;}
+    footer .fo_mar{width: 392px; height: 53px; padding-top: 40px;}
+    footer .fo_mar h1{width: 100px; height: 35px; margin-right: 20px;}
+    footer .fo_mar nav{width: 272px;}
+    footer .fo_mar nav .fo_menu li{margin-right: 15px; font-size: 10px;}
+    footer .fo_mar p{font-size: 10px; margin-top: 0px; width: 267px;}
+}
+
+@media (min-width: 576px) and (max-width:767px){
+    footer {height: 115px; margin-top: 70px;top: 171px;}
+    footer .fo_mar{width: 600px; height: 53px; padding-top: 40px;}
+    footer .fo_mar h1{width: 135px; height: 50px; margin-right: 20px;}
+    footer .fo_mar nav{width: 400px;}
+    footer .fo_mar nav .fo_menu li{margin-right: 30px; font-size: 12px;}
+    footer .fo_mar p{font-size: 11px; margin-top: 0px; width: 267px;}
+
 }
 
